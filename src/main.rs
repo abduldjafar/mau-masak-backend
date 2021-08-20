@@ -46,7 +46,7 @@ async fn main() -> std::io::Result<()> {
             .wrap(cors_middleware)
             .wrap(middleware::Logger::default())
             .data(services::users::UserAppState{users_service_manager})
-            .configure(router::api::init)
+            .configure(router::api::userApi)
             .route("/", web::get().to(greet))
     })
         .bind(server_url)?
