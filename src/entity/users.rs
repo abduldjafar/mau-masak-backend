@@ -50,7 +50,11 @@ pub struct UserComments{
     pub comment: String
 }
 
-
+#[derive(Debug, Serialize, Deserialize)]
+pub struct Claims {
+    pub sub: String,
+    pub exp: usize,
+}
 fn default_int_value() -> i32 {
     0
 }
