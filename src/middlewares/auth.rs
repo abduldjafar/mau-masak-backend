@@ -1,4 +1,4 @@
-use actix_web::{Error, HttpResponse, dev::{ServiceRequest, ServiceResponse}, http::{Method, HeaderName, HeaderValue}, web::Data, HttpMessage};
+use actix_web::{Error, HttpResponse, dev::{ServiceRequest, ServiceResponse}, http::{Method, HeaderName, HeaderValue}, web::Data, HttpMessage, HttpRequest};
 use futures::{
     future::{ok, Ready},
     Future,
@@ -75,9 +75,11 @@ impl<S, B> Service for AuthenticationMiddleware<S>
                             if authen_str.starts_with("bearer") || authen_str.starts_with("Bearer") {
                                 println!("Parsing token...");
                                 let token = authen_str[6..authen_str.len()].trim();
-                                println!("{}", token);
-                                let payload = req.take_payload();
-                                authenticate_pass = true;
+                                let decode_token = crate::entity::jwt::UserToken::decode_token(token.to_string());
+
+                                if decode_token.is_ok(){
+                                    authenticate_pass = true;
+                                }
                             }else {
                                 authenticate_pass = false;
                             }

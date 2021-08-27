@@ -4,15 +4,13 @@ use actix_web::{web,http, middleware, App, HttpServer,HttpRequest,Responder};
 use dotenv::dotenv;
 use std::borrow::Borrow;
 use actix_web::dev::Service;
-use futures::FutureExt;
-
 
 
 mod entity;
 mod repository;
 mod services;
 mod controller;
-mod router;
+mod api;
 mod configuration;
 mod middlewares;
 mod constants;
@@ -49,15 +47,12 @@ async fn main() -> std::io::Result<()> {
             .allowed_header(http::header::CONTENT_TYPE)
             .max_age(3600);
 
-
         // Init http server
         App::new()
             .wrap(cors_middleware)
             .wrap(middleware::Logger::default())
             .data(data)
-            .route("/login",web::post().to(controller::users::login))
-            .wrap(crate::middlewares::auth::Authentication)
-            .route("/get/all", web::get().to(controller::users::get_all))
+            .configure(api::resources::user_api)
     })
         .bind(server_url)?
         .run()

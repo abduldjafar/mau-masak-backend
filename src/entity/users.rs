@@ -6,7 +6,7 @@ use bson::DateTime;
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Users {
     #[serde(rename = "_id", skip_serializing_if = "Option::is_none")]
-    id: Option<bson::oid::ObjectId>,
+    pub id: Option<bson::oid::ObjectId>,
 
     pub email: String,
     pub password: String,

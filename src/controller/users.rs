@@ -1,4 +1,4 @@
-use actix_web::{ web,get, HttpResponse, Responder,Result};
+use actix_web::{web, get, HttpResponse, Responder, Result, HttpRequest};
 use crate::entity::users::Users;
 use crate::services::users::UserAppState;
 use futures::{ TryStreamExt};
@@ -33,7 +33,8 @@ pub async fn add_user(app_data: web::Data<UserAppState>, mut data: web::Json<Use
 }
 
 
-pub async fn get_user_by_id(app_data: web::Data<UserAppState>, web::Path(user_id): web::Path<String>) -> Result<HttpResponse> {
+pub async fn get_user_by_id(app_data: web::Data<UserAppState>,req: HttpRequest) -> Result<HttpResponse> {
+    let user_id = extract_token(req);
 
     let action_user =  app_data.users_service_manager.find_by_id(user_id).await;
     let result = web::block(move || action_user).await;
@@ -45,7 +46,6 @@ pub async fn get_user_by_id(app_data: web::Data<UserAppState>, web::Path(user_id
             Ok(HttpResponse::InternalServerError().json(""))
         }
     }
-
 }
 
 
@@ -71,7 +71,7 @@ pub async fn get_all(app_data: web::Data<UserAppState>) -> Result<HttpResponse> 
         Err(e) => {
             println!("Error while getting, {:?}", e);
             Ok(HttpResponse::InternalServerError().json(ResponseBody::new(
-                "success",
+                "error when fetch datas",
                 500,
                 true,
                 constants::EMPTY,
@@ -88,11 +88,12 @@ pub async fn login(app_data: web::Data<UserAppState>, mut data: web::Json<Users>
         Ok(document) => {
             match document{
                 Some(doc) => {
+                    let user: Users = bson::from_bson(Bson::Document(doc)).unwrap();
                     HttpResponse::Ok().json(ResponseBody::new(
-                        "success",
+                        constants::MESSAGE_LOGIN_SUCCESS,
                         200,
                         false,
-                        crate::entity::jwt::UserToken::generate_token(data.email.to_string()),
+                        crate::entity::jwt::UserToken::generate_token(user.email, user.id.unwrap().to_hex()),
                     ))
                 }
                 None => {
@@ -115,4 +116,13 @@ pub async fn login(app_data: web::Data<UserAppState>, mut data: web::Json<Users>
             ))
         }
     }
+}
+
+pub  fn extract_token(request: HttpRequest) -> String{
+    let req_headers:&str = request.headers().get("Authorization").unwrap().to_str().unwrap();
+    let token = req_headers[6..req_headers.len()].trim();
+    let decode_token = crate::entity::jwt::UserToken::decode_token(token.to_string());
+    let result = decode_token.unwrap();
+    result.claims.id
+
 }
