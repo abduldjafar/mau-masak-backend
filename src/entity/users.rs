@@ -3,19 +3,13 @@ use serde::{Deserialize, Serialize};
 use chrono::prelude::*;
 use bson::DateTime;
 
-#[derive(Debug, Serialize, Deserialize)]
+
+#[derive(Debug,Serialize, Deserialize)]
 pub struct Users {
     #[serde(rename = "_id", skip_serializing_if = "Option::is_none")]
     pub id: Option<bson::oid::ObjectId>,
-
     pub email: String,
     pub password: String,
-
-    #[serde(default = "default_int_value")]
-    pub follower_count: i32,
-
-    #[serde(default = "default_int_value")]
-    pub following_count: i32,
 
     #[serde(default = "time_now")]
     pub created_at: DateTime
@@ -55,9 +49,7 @@ pub struct Claims {
     pub sub: String,
     pub exp: usize,
 }
-fn default_int_value() -> i32 {
-    0
-}
+
 
 fn time_now() -> DateTime {
     let local= Utc::now();

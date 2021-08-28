@@ -68,7 +68,6 @@ impl<S, B> Service for AuthenticationMiddleware<S>
             }
             if !authenticate_pass {
                 if let Some(userAppState) = req.app_data::<Data<UserAppState>>() {
-                    println!("Connecting to database...");
                     if let Some(authen_header) = req.headers().get(constants::AUTHORIZATION) {
                         println!("Parsing authorization header...");
                         if let Ok(authen_str) = authen_header.to_str() {

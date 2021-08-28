@@ -27,7 +27,6 @@ impl UsersRepository {
             _ => {}
         }
 
-
         let serialized_movie = bson::to_bson(&data)?;
         let document = serialized_movie.as_document().unwrap();
         self.collection.insert_one(document.clone(), None).await

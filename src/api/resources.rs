@@ -10,12 +10,18 @@ pub fn user_api(cfg: &mut web::ServiceConfig)  {
                     .route(web::post().to(users::login))
             )
             .service(
-                web::resource("/findall").route(web::get().to(users::get_all))
-                    .wrap(crate::middlewares::auth::Authentication)
-            )
-            .service(
-                web::resource("/find").route(web::get().to(users::get_user_by_id))
-                    .wrap(crate::middlewares::auth::Authentication)
+                web::scope("/user")
+                    .service(
+                        web::resource("/add").route(web::post().to(users::add_user))
+                    )
+                    .service(
+                        web::resource("/findall").route(web::get().to(users::get_all))
+                            .wrap(crate::middlewares::auth::Authentication)
+                    )
+                    .service(
+                        web::resource("/find").route(web::get().to(users::get_user_by_id))
+                            .wrap(crate::middlewares::auth::Authentication)
+                    )
             )
     );
 }
