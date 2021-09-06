@@ -5,5 +5,5 @@
 ## Idealic Api <a id="api"></a>
 
 * [Talents](api/talents/README.md)
-  * [Untitled](api/talents/untitled.md)
+  * [Get Talents By ID](api/talents/untitled.md)
 
