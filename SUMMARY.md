@@ -4,6 +4,6 @@
 
 ## Idealic Api <a id="api"></a>
 
-* [Talents](api/untitled-1/README.md)
-  * [Untitled](api/untitled-1/untitled.md)
+* [Talents](api/talents/README.md)
+  * [Untitled](api/talents/untitled.md)
 
