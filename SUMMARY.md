@@ -2,8 +2,9 @@
 
 * [Initial page](README.md)
 
-## Idealic Api <a id="api"></a>
+## Mico Api <a id="api"></a>
 
-* [Talents](api/talents/README.md)
-  * [Get Talents By ID](api/talents/untitled.md)
+* [users](api/users/README.md)
+  * [Save Talents](api/users/save-talents.md)
+  * [Get Talents By ID](api/users/untitled.md)
 
