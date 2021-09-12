@@ -52,5 +52,44 @@ json body for create users. the bodies have explained in below
 {% endtab %}
 {% endtabs %}
 
+### Example
 
+{% tabs %}
+{% tab title="curl" %}
+```text
+curl --location --request POST 'https://api-dev.mico.sg/v1/users/save' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "koteka@gmail.com",
+    "name": "koteka exchain",
+    "password": "asoi geboi"
+}'
+```
+{% endtab %}
+
+{% tab title="JavaScript - Fetch" %}
+```text
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "email": "koteka@gmail.com",
+  "name": "koteka exchain",
+  "password": "asoi geboi"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("https://api-dev.mico.sg/v1/users/save", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+{% endtab %}
+{% endtabs %}
 
