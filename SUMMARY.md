@@ -5,6 +5,6 @@
 ## Mico Api <a id="api"></a>
 
 * [users](api/users/README.md)
-  * [Save Talents](api/users/save-talents.md)
+  * [Save Users](api/users/save-users.md)
   * [Get Talents By ID](api/users/untitled.md)
 
