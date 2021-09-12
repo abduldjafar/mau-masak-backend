@@ -32,6 +32,8 @@ json body for create users. the bodies have explained in below
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Body Request
+
 {% tabs %}
 {% tab title="Json Body" %}
 ```text
