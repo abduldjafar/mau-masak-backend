@@ -13,7 +13,7 @@ save users
 {% api-method-request %}
 {% api-method-body-parameters %}
 {% api-method-parameter name="" type="object" required=true %}
-json body for create users
+json body for create users. the bodies have explained in below
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
