@@ -25,7 +25,34 @@ user id
 {% endapi-method-response-example-description %}
 
 ```
+{
+    "responses": {
+        "code":200,
+        "isError":false,
+        "message":"success",
+        "data":{
+            "email": "koteka@gmail.com",
+            "name": "koteka exchain",
+        }
+    }
+}
+```
+{% endapi-method-response-example %}
 
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "responses": {
+        "code":404,
+        "isError":true,
+        "message":"user not found",
+        "data":nil
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
