@@ -59,3 +59,41 @@ user id
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example
+
+{% tabs %}
+{% tab title="curl" %}
+```text
+curl --location --request GET 'https://api-dev.mico.sg/v1/users/:id'
+```
+{% endtab %}
+
+{% tab title="JavaScript - Fetch" %}
+```text
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("https://api-dev.mico.sg/v1/users/:id", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+{% endtab %}
+
+{% tab title="JavaScript - jQuery" %}
+```text
+var settings = {
+  "url": "https://api-dev.mico.sg/v1/users/:id",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+{% endtab %}
+{% endtabs %}
+
