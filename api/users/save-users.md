@@ -93,5 +93,27 @@ fetch("https://api-dev.mico.sg/v1/users/save", requestOptions)
   .catch(error => console.log('error', error));
 ```
 {% endtab %}
+
+{% tab title="JavaScript - jQuery" %}
+```
+var settings = {
+  "url": "https://api-dev.mico.sg/v1/users/save",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "email": "koteka@gmail.com",
+    "name": "koteka exchain",
+    "password": "asoi geboi"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+{% endtab %}
 {% endtabs %}
 
