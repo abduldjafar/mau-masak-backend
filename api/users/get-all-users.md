@@ -53,6 +53,23 @@ Cake successfully retrieved.
 }
 ```
 {% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "responses": {
+        "code": 400,
+        "data": null,
+        "isError": true,
+        "message": "message will ouput from server"
+    }
+}
+```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
