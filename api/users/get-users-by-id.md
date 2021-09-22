@@ -1,6 +1,6 @@
 # Get Users By ID
 
-{% api-method method="get" host="https://api-dev.mico.sg" path="/v1/users" %}
+{% api-method method="get" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users" %}
 {% api-method-summary %}
 get users by id
 {% endapi-method-summary %}

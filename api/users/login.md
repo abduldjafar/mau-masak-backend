@@ -1,6 +1,6 @@
 # Login
 
-{% api-method method="post" host="http://api-dev.mico.sg" path="/login" %}
+{% api-method method="post" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/login" %}
 {% api-method-summary %}
 Users Login
 {% endapi-method-summary %}
