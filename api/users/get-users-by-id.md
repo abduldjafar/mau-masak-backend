@@ -1,6 +1,6 @@
 # Get Users By ID
 
-{% api-method method="get" host="https://api-dev.mico.sg" path="/v1/users/:id" %}
+{% api-method method="get" host="https://api-dev.mico.sg" path="/v1/users" %}
 {% api-method-summary %}
 get users by id
 {% endapi-method-summary %}
@@ -11,12 +11,6 @@ get users by id
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
-user id
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
 token from login
