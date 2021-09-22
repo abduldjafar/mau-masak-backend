@@ -12,7 +12,7 @@ This endpoint allows you to get free cakes.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-body-parameters %}
-{% api-method-parameter name="" type="object" required=true %}
+{% api-method-parameter name="body" type="object" required=true %}
 
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
