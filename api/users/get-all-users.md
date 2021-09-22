@@ -74,5 +74,51 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example
+
+{% tabs %}
+{% tab title="curl" %}
+```go
+curl --location --request GET 'http://localhost:8080/v1/users' \
+--header 'Authorization: xxxxxxxxxx'
+```
+{% endtab %}
+
+{% tab title="JavaScript - Fetch" %}
+```javascript
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "xxxxxxxxxx");
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+fetch("http://localhost:8080/v1/users", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+{% endtab %}
+
+{% tab title="JavaScript - jQuery" %}
+```javascript
+var settings = {
+  "url": "http://localhost:8080/v1/users",
+  "method": "GET",
+  "timeout": 0,
+  "headers": {
+    "Authorization": "xxxxxxxxxx"
+  },
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+{% endtab %}
+{% endtabs %}
+
 
 
