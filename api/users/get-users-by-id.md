@@ -24,15 +24,28 @@ user id
 
 {% endapi-method-response-example-description %}
 
-```
+```go
 {
     "responses": {
         "code":200,
         "isError":false,
         "message":"success",
         "data":{
-            "email": "koteka@gmail.com",
-            "name": "koteka exchain",
+             "_id": "61482cecc7bff97f88829ad6",
+                "name": "",
+                "surname": "",
+                "birthdate": "0001-01-01T00:00:00Z",
+                "email": "abdul haris djafar",
+                "mobile_number": "",
+                "password": "",
+                "address_street": "",
+                "address_number": "",
+                "address_postal_code": "",
+                "address_country": "",
+                "address_city": "",
+                "verified": false,
+                "type": "",
+                "created_at": "0001-01-01T00:00:00Z"
         }
     }
 }
@@ -49,7 +62,7 @@ user id
     "responses": {
         "code":404,
         "isError":true,
-        "message":"user not found",
+        "message":"message will output from server",
         "data":nil
     }
 }
