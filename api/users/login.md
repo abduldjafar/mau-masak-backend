@@ -62,7 +62,7 @@ Could not find a cake matching this query.
 ### Body Request
 
 {% tabs %}
-{% tab title="Json Body" %}
+{% tab title="Json Body " %}
 ```javascript
 {
     "email":"abdulx",
