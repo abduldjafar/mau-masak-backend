@@ -1,6 +1,6 @@
 # Update Users
 
-{% api-method method="put" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/cakes/:id" %}
+{% api-method method="put" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users" %}
 {% api-method-summary %}
 Update Users
 {% endapi-method-summary %}
