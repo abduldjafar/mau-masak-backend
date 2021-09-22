@@ -30,18 +30,32 @@ json bodys datas
 Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
-```
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
+```javascript
+{
+    "responses": {
+        "code": 200,
+        "data": null,
+        "isError": false,
+        "message": "success"
+    }
+}
 ```
 {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=404 %}
+{% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
 Could not find a cake matching this query.
 {% endapi-method-response-example-description %}
 
-```
-{    "message": "Ain't no cake like that."}
+```javascript
+{
+    "responses": {
+        "code": 400,
+        "data": null,
+        "isError": true,
+        "message": "from server"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
