@@ -25,14 +25,17 @@ Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
 ```javascript
-{    "name": "{
+{
     "responses": {
-        "code": 400,
-        "data": null,
-        "isError": true,
+        "code": 200,
+        "data": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDk5ZTZiM2ZhNDA0NjIxNWQyODczNyIsImVtYWlsIjoiYWJkdWx4IiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzIzNjI1MTZ9.Jenrr6NnYBfj4lRkHNJjLiCjYzh1m8tpHLbi8ouwbEE",
+            "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDk5ZTZiM2ZhNDA0NjIxNWQyODczNyIsImVtYWlsIjoiYWJkdWx4IiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzI4ODA5MTZ9.n2AhDdQy6gtx2xHHBXDT_bHrSt2YH7y4i6edjmG9i5Y"
+        },
+        "isError": false,
         "message": "success"
     }
-} 
+}
 ```
 {% endapi-method-response-example %}
 
@@ -73,6 +76,69 @@ Could not find a cake matching this query.
 | :--- | :--- | :--- |
 | email | string | registered email |
 | password | string | users password |
+{% endtab %}
+{% endtabs %}
+
+### Example
+
+{% tabs %}
+{% tab title="curl" %}
+```javascript
+curl --location --request POST 'http://localhost:8080/v1/login' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email":"abdulx",
+    "password":"assoi"
+}'
+```
+{% endtab %}
+
+{% tab title="JavaScript - Fetch" %}
+```javascript
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "email": "abdulx",
+  "password": "assoi"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://localhost:8080/v1/login", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+{% endtab %}
+
+{% tab title="JavaScript - JQuery" %}
+```javascript
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "email": "abdulx",
+  "password": "assoi"
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://localhost:8080/v1/login", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
 {% endtab %}
 {% endtabs %}
 
