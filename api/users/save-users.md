@@ -25,7 +25,14 @@ json body for create users. the bodies have explained in below
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+    "responses": {
+        "code": 200,
+        "data": null,
+        "isError": false,
+        "message": "success"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
