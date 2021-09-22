@@ -12,10 +12,16 @@ get users by id
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=false %}
+{% api-method-parameter name="id" type="string" required=true %}
 user id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+token from login
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -76,19 +82,24 @@ user id
 
 {% tabs %}
 {% tab title="curl" %}
-```text
-curl --location --request GET 'https://api-dev.mico.sg/v1/users/:id'
+```javascript
+curl --location --request GET 'http://localhost:8080/v1/users/:id' \
+--header 'Authorization: xxxxxxxxxx'
 ```
 {% endtab %}
 
 {% tab title="JavaScript - Fetch" %}
-```text
+```javascript
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "xxxxxxxxxx");
+
 var requestOptions = {
   method: 'GET',
+  headers: myHeaders,
   redirect: 'follow'
 };
 
-fetch("https://api-dev.mico.sg/v1/users/:id", requestOptions)
+fetch("http://localhost:8080/v1/users/:id", requestOptions)
   .then(response => response.text())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
@@ -96,11 +107,14 @@ fetch("https://api-dev.mico.sg/v1/users/:id", requestOptions)
 {% endtab %}
 
 {% tab title="JavaScript - jQuery" %}
-```text
+```javascript
 var settings = {
-  "url": "https://api-dev.mico.sg/v1/users/:id",
+  "url": "http://localhost:8080/v1/users/:id",
   "method": "GET",
   "timeout": 0,
+  "headers": {
+    "Authorization": "xxxxxxxxxx"
+  },
 };
 
 $.ajax(settings).done(function (response) {
