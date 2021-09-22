@@ -1,6 +1,6 @@
 # Save Users
 
-{% api-method method="post" host="https://api-dev.mico.sg/v1" path="/users/save" %}
+{% api-method method="post" host="https://api-dev.mico.sg/v1" path="/users" %}
 {% api-method-summary %}
 save users
 {% endapi-method-summary %}
