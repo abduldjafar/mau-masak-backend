@@ -1,12 +1,12 @@
 # Login
 
-{% api-method method="post" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/login" %}
+{% api-method method="post" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/login" %}
 {% api-method-summary %}
 Users Login
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -29,8 +29,7 @@ Cake successfully retrieved.
     "responses": {
         "code": 200,
         "data": {
-            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDk5ZTZiM2ZhNDA0NjIxNWQyODczNyIsImVtYWlsIjoiYWJkdWx4IiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzIzNjI1MTZ9.Jenrr6NnYBfj4lRkHNJjLiCjYzh1m8tpHLbi8ouwbEE",
-            "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDk5ZTZiM2ZhNDA0NjIxNWQyODczNyIsImVtYWlsIjoiYWJkdWx4IiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzI4ODA5MTZ9.n2AhDdQy6gtx2xHHBXDT_bHrSt2YH7y4i6edjmG9i5Y"
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDk5ZTZiM2ZhNDA0NjIxNWQyODczNyIsImVtYWlsIjoiYWJkdWx4IiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzIzNjI1MTZ9.Jenrr6NnYBfj4lRkHNJjLiCjYzh1m8tpHLbi8ouwbEE"
         },
         "isError": false,
         "message": "success"
@@ -84,7 +83,7 @@ Could not find a cake matching this query.
 {% tabs %}
 {% tab title="curl" %}
 ```javascript
-curl --location --request POST 'http://localhost:8080/v1/login' \
+curl --location --request POST 'https://mico-backend-services-i5jta7dz4q-uc.a.run.app/v1/login' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "email":"abdulx",

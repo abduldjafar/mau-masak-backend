@@ -82,7 +82,7 @@ Could not find a cake matching this query.
 ```
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Description" %}
 | fieldname | type | description |
 | :--- | :--- | :--- |
 | name | string |  |
