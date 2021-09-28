@@ -35,6 +35,21 @@ json body for create users. the bodies have explained in below
 }
 ```
 {% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "code": 401,
+    "data": null,
+    "isError": true,
+    "message": "token contains an invalid number of segments"
+}
+```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}

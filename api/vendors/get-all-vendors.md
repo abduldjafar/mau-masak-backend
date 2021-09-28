@@ -63,19 +63,27 @@ limit of rows
 ```
 {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=400 %}
+{% api-method-response-example httpCode=302 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
 {% api-method-response-example-description %}
 
 {% endapi-method-response-example-description %}
 
 ```
 {
-    "responses": {
-        "code": 400,
-        "data": null,
-        "isError": true,
-        "message": "message will ouput from server"
-    }
+    "code": 401,
+    "data": null,
+    "isError": true,
+    "message": "token contains an invalid number of segments"
 }
 ```
 {% endapi-method-response-example %}

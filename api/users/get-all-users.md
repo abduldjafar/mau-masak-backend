@@ -54,7 +54,17 @@ Cake successfully retrieved.
 ```
 {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=400 %}
+{% api-method-response-example httpCode=302 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
 {% api-method-response-example-description %}
 
 {% endapi-method-response-example-description %}
@@ -62,10 +72,10 @@ Cake successfully retrieved.
 ```
 {
     "responses": {
-        "code": 400,
+        "code": 401,
         "data": null,
         "isError": true,
-        "message": "message will ouput from server"
+        "message": "error message will produce by server"
     }
 }
 ```

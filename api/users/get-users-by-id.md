@@ -52,7 +52,17 @@ token from login
 ```
 {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=404 %}
+{% api-method-response-example httpCode=302 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
 {% api-method-response-example-description %}
 
 {% endapi-method-response-example-description %}
@@ -60,10 +70,10 @@ token from login
 ```
 {
     "responses": {
-        "code":404,
-        "isError":true,
-        "message":"message will output from server",
-        "data":nil
+        "code": 401,
+        "data": null,
+        "isError": true,
+        "message": "error message will produce by server"
     }
 }
 ```
