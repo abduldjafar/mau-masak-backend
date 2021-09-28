@@ -58,6 +58,23 @@ Could not find a cake matching this query.
 }
 ```
 {% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "responses": {
+        "code": 401,
+        "data": null,
+        "isError": true,
+        "message": "error message will produce by server"
+    }
+}
+```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
