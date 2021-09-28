@@ -2,7 +2,7 @@
 
 {% api-method method="get" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/vendors/all" %}
 {% api-method-summary %}
-Get Cakes
+Get All Vendors
 {% endapi-method-summary %}
 
 {% api-method-description %}
