@@ -1,6 +1,6 @@
 # Get All Vendors
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/cakes/:id" %}
+{% api-method method="get" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/vendors/all" %}
 {% api-method-summary %}
 Get Cakes
 {% endapi-method-summary %}
@@ -13,11 +13,11 @@ This endpoint allows you to get free cakes.
 {% api-method-request %}
 {% api-method-query-parameters %}
 {% api-method-parameter name="page" type="integer" %}
-The API will do its best to find a cake matching the provided recipe.
+pagination
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="limit" type="integer" %}
-Whether the cake should be gluten-free or not.
+limit of rows
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
