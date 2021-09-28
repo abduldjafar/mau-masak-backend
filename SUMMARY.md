@@ -6,6 +6,7 @@
 
 * [vendors](api/vendors/README.md)
   * [Add Vendors](api/vendors/add-vendors.md)
+  * [Get All Vendors](api/vendors/get-all-vendors.md)
 * [users](api/users/README.md)
   * [Save Users](api/users/save-users.md)
   * [Get Users By ID](api/users/get-users-by-id.md)
