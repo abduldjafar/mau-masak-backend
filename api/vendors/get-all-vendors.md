@@ -13,7 +13,7 @@ This endpoint allows you to get free cakes.
 {% api-method-request %}
 {% api-method-query-parameters %}
 {% api-method-parameter name="page" type="integer" %}
-pagination
+pagination from 0
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="limit" type="integer" %}
@@ -77,5 +77,41 @@ limit of rows
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example
 
+{% tabs %}
+{% tab title="curl" %}
+```javascript
+curl --location --request GET 'https://mico-backend-services-i5jta7dz4q-uc.a.run.app/v1/vendors/all?page=0&limit=10'
+```
+{% endtab %}
+
+{% tab title="JavaScript - Fetch" %}
+```javascript
+var requestOptions = {
+  method: 'GET',
+  redirect: 'follow'
+};
+
+fetch("https://mico-backend-services-i5jta7dz4q-uc.a.run.app/v1/vendors/all?page=0&limit=10", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+{% endtab %}
+
+{% tab title="JavaScript - jQuery" %}
+```javascript
+var settings = {
+  "url": "https://mico-backend-services-i5jta7dz4q-uc.a.run.app/v1/vendors/all?page=0&limit=10",
+  "method": "GET",
+  "timeout": 0,
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+{% endtab %}
+{% endtabs %}
 
