@@ -1,8 +1,8 @@
-# Update Users
+# Update Users Profile
 
 {% api-method method="put" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/profile" %}
 {% api-method-summary %}
-Update Users
+Update Users Profile
 {% endapi-method-summary %}
 
 {% api-method-description %}
