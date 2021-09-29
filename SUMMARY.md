@@ -13,4 +13,5 @@
   * [Get All Users](api/users/get-all-users.md)
   * [Login](api/users/login.md)
   * [Update Users Profile](api/users/update-users.md)
+  * [User Validation](api/users/user-validation.md)
 
