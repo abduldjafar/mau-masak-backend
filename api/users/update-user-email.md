@@ -1,6 +1,6 @@
 # Update User Email
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/users/email\_profile" %}
+{% api-method method="get" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/email\_profile" %}
 {% api-method-summary %}
 Get Cakes
 {% endapi-method-summary %}
@@ -11,27 +11,11 @@ This endpoint allows you to get free cakes.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Authentication token to track down who is emptying our stocks.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -41,7 +25,14 @@ Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
 ```
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
+{
+    "responses": {
+        "code": 200,
+        "data": null,
+        "isError": false,
+        "message": "success"
+    }
+}
 ```
 {% endapi-method-response-example %}
 
@@ -51,12 +42,95 @@ Could not find a cake matching this query.
 {% endapi-method-response-example-description %}
 
 ```
-{    "message": "Ain't no cake like that."}
+{
+    "responses": {
+        "code": 400,
+        "data": null,
+        "isError": true,
+        "message": "email already registered"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
+## Body Request
 
+{% tabs %}
+{% tab title="Json Body" %}
+```javascript
+{
+    "email":"5yousefsalmana@iseovels.com"
+}
+```
+{% endtab %}
+
+{% tab title="Description" %}
+| field | type | description |
+| :--- | :--- | :--- |
+| email | string | new email for changing |
+{% endtab %}
+{% endtabs %}
+
+### Example
+
+{% tabs %}
+{% tab title="curl" %}
+```javascript
+curl --location --request PUT 'http://localhost:8080/v1/users/email_profile' \
+--header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTRkMzgxMGZkMDI3NGZhNDFlOTkzYyIsImVtYWlsIjoiM3hpdXRhbC5taW5nY0ByaGVpb3AuY29tIiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzMwNDA2MTN9.e_5rmTADMwbU2NBgruhzTdEhvzyddNRQrjoGHX11OCc' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email":"5yousefsalmana@iseovels.com"
+}'
+```
+{% endtab %}
+
+{% tab title="JavaScript - Fetch" %}
+```javascript
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTRkMzgxMGZkMDI3NGZhNDFlOTkzYyIsImVtYWlsIjoiM3hpdXRhbC5taW5nY0ByaGVpb3AuY29tIiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzMwNDA2MTN9.e_5rmTADMwbU2NBgruhzTdEhvzyddNRQrjoGHX11OCc");
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "email": "5yousefsalmana@iseovels.com"
+});
+
+var requestOptions = {
+  method: 'PUT',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://localhost:8080/v1/users/email_profile", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+{% endtab %}
+
+{% tab title="JavaScript - jQuery" %}
+```javascript
+var settings = {
+  "url": "http://localhost:8080/v1/users/email_profile",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+    "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTRkMzgxMGZkMDI3NGZhNDFlOTkzYyIsImVtYWlsIjoiM3hpdXRhbC5taW5nY0ByaGVpb3AuY29tIiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzMwNDA2MTN9.e_5rmTADMwbU2NBgruhzTdEhvzyddNRQrjoGHX11OCc",
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "email": "5yousefsalmana@iseovels.com"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
+{% endtab %}
+{% endtabs %}
 
