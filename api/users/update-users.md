@@ -19,7 +19,7 @@ Authentication token to track down who is emptying our stocks.
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="body" type="object" required=false %}
-all datas should be send
+all datas should be send and not empty
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
