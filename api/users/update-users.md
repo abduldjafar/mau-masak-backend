@@ -1,6 +1,6 @@
 # Update Users
 
-{% api-method method="put" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users" %}
+{% api-method method="put" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/profile" %}
 {% api-method-summary %}
 Update Users
 {% endapi-method-summary %}
@@ -86,14 +86,7 @@ Could not find a cake matching this query.
 ```javascript
 {
     "name": "koteka",
-    "surname": "aspsasa",
     "birthdate": "2021-09-22T03:23:23.275+00:00",
-    "mobile_number": "",
-    "address_street": "",
-    "address_number": "",
-    "address_postal_code": "",
-    "address_country": "",
-    "address_city": "",
     "gender":""
 
 }
@@ -104,14 +97,8 @@ Could not find a cake matching this query.
 | fieldname | type | description |
 | :--- | :--- | :--- |
 | name | string |  |
-| name | string |  |
-| sure\_name | string |  |
 | birthdate | string |  |
-| mobile\_number | string |  |
-| address\_street | string |  |
-| address\__postal_\_code | string |  |
-| address\_country | string |  |
-| address\_city | string |  |
+| gender | string |  |
 |  |  |  |
 {% endtab %}
 {% endtabs %}
