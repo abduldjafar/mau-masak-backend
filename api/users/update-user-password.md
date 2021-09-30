@@ -1,6 +1,6 @@
 # Update User Password
 
-{% api-method method="put" host="https://api.cakes.com" path="/v1/users/password\_profile" %}
+{% api-method method="put" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/password\_profile" %}
 {% api-method-summary %}
 Update User Password
 {% endapi-method-summary %}
