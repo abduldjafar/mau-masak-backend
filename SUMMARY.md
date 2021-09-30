@@ -16,4 +16,5 @@
   * [Login](api/users/login.md)
   * [Update Users Profile](api/users/update-users.md)
   * [User Validation](api/users/user-validation.md)
+  * [User Add Address](api/users/user-add-address.md)
 
