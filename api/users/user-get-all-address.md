@@ -1,6 +1,6 @@
 # User Get All Address
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/users/address" %}
+{% api-method method="get" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/address" %}
 {% api-method-summary %}
 user get all address
 {% endapi-method-summary %}
@@ -25,17 +25,54 @@ Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
 ```
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
+{
+    "responses": {
+        "code": 200,
+        "data": [
+            {
+                "user_id": "6154d3810fd0274fa41e993c",
+                "recipent_name": "asoi",
+                "country": "asoi",
+                "phone_number": "asoi",
+                "address_line1": "asoi",
+                "address_line2": "asoi",
+                "city": "asoi",
+                "state": "asoi",
+                "postal_code": "asoi"
+            },
+            {
+                "user_id": "6154d3810fd0274fa41e993c",
+                "recipent_name": "asoi",
+                "country": "asoi",
+                "phone_number": "asoi",
+                "address_line1": "asoi",
+                "address_line2": "asoi",
+                "city": "asoi",
+                "state": "asoi",
+                "postal_code": "asoi"
+            }
+        ],
+        "isError": false,
+        "message": "success"
+    }
+}
 ```
 {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=404 %}
+{% api-method-response-example httpCode=400 %}
 {% api-method-response-example-description %}
 Could not find a cake matching this query.
 {% endapi-method-response-example-description %}
 
 ```
-{    "message": "Ain't no cake like that."}
+{
+    "responses": {
+        "code": 400,
+        "data":null,
+        "isError": true,
+        "message": "message form server"
+    }
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -43,4 +80,19 @@ Could not find a cake matching this query.
 {% endapi-method %}
 
 
+
+### Example
+
+{% tabs %}
+{% tab title="curl" %}
+```javascript
+curl --location --request GET 'http://localhost:8080/v1/users/address' \
+--header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTRkMzgxMGZkMDI3NGZhNDFlOTkzYyIsImVtYWlsIjoiNXlvdXNlZnNhbG1hbmFAaXNlb3ZlbHMuY29tIiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzMwNTA0MDl9.ISpxv_BTOuxQbI0nRdvUSiEW2v-XYBdOsAQpqvsalWo'
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 

@@ -1,6 +1,6 @@
 # User Add Address
 
-{% api-method method="post" host="https://api.cakes.com" path="/v1/users/address" %}
+{% api-method method="post" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/address" %}
 {% api-method-summary %}
 User Add Address
 {% endapi-method-summary %}
