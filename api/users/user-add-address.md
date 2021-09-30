@@ -81,7 +81,16 @@ Could not find a cake matching this query.
 {% endtab %}
 
 {% tab title="Description" %}
-
+| field | type | description |
+| :--- | :--- | :--- |
+| recipent\_name | string |  |
+| country | string |  |
+| phone\_number | string |  |
+| address\_line1 | string |  |
+| address\_line2 | string |  |
+| city | string |  |
+| state | string |  |
+| postal\_code | string |  |
 {% endtab %}
 {% endtabs %}
 
