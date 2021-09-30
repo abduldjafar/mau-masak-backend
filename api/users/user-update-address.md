@@ -71,8 +71,101 @@ Could not find a cake matching this query.
 | field | type | description |
 | :--- | :--- | :--- |
 | \_id | string | address id |
+| user\_id | string |  |
+| recipent\_name | string |  |
+| country | string |  |
+| phone\_number | string |  |
+| address\_line1 | string |  |
+| address\_line2 | string |  |
+| city | string |  |
+| state | string |  |
+| postal\_code | string |  |
 
  
+{% endtab %}
+{% endtabs %}
+
+### Example
+
+{% tabs %}
+{% tab title="curl" %}
+```javascript
+curl --location --request PUT 'http://localhost:8080/v1/users/address' \
+--header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTRkMzgxMGZkMDI3NGZhNDFlOTkzYyIsImVtYWlsIjoiNXlvdXNlZnNhbG1hbmFAaXNlb3ZlbHMuY29tIiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzMwNTA0MDl9.ISpxv_BTOuxQbI0nRdvUSiEW2v-XYBdOsAQpqvsalWo' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "_id": "6155290af8e7be3a693ffaa7",
+    "recipent_name": "aasoesoi",
+    "country": "asoi",
+    "phone_number": "asoi",
+    "address_line1": "xxxx",
+    "address_line2": "asoi",
+    "city": "asoi",
+    "state": "asoi",
+    "postal_code": "asoi"
+}'
+```
+{% endtab %}
+
+{% tab title="JavaScript - Fetch" %}
+```javascript
+var myHeaders = new Headers();
+myHeaders.append("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTRkMzgxMGZkMDI3NGZhNDFlOTkzYyIsImVtYWlsIjoiNXlvdXNlZnNhbG1hbmFAaXNlb3ZlbHMuY29tIiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzMwNTA0MDl9.ISpxv_BTOuxQbI0nRdvUSiEW2v-XYBdOsAQpqvsalWo");
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "_id": "6155290af8e7be3a693ffaa7",
+  "recipent_name": "aasoesoi",
+  "country": "asoi",
+  "phone_number": "asoi",
+  "address_line1": "xxxx",
+  "address_line2": "asoi",
+  "city": "asoi",
+  "state": "asoi",
+  "postal_code": "asoi"
+});
+
+var requestOptions = {
+  method: 'PUT',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://localhost:8080/v1/users/address", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+```
+{% endtab %}
+
+{% tab title="JavaScript - jQuery" %}
+```javascript
+var settings = {
+  "url": "http://localhost:8080/v1/users/address",
+  "method": "PUT",
+  "timeout": 0,
+  "headers": {
+    "Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTRkMzgxMGZkMDI3NGZhNDFlOTkzYyIsImVtYWlsIjoiNXlvdXNlZnNhbG1hbmFAaXNlb3ZlbHMuY29tIiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzMwNTA0MDl9.ISpxv_BTOuxQbI0nRdvUSiEW2v-XYBdOsAQpqvsalWo",
+    "Content-Type": "application/json"
+  },
+  "data": JSON.stringify({
+    "_id": "6155290af8e7be3a693ffaa7",
+    "recipent_name": "aasoesoi",
+    "country": "asoi",
+    "phone_number": "asoi",
+    "address_line1": "xxxx",
+    "address_line2": "asoi",
+    "city": "asoi",
+    "state": "asoi",
+    "postal_code": "asoi"
+  }),
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+```
 {% endtab %}
 {% endtabs %}
 
