@@ -18,4 +18,5 @@
   * [User Validation](api/users/user-validation.md)
   * [User Add Address](api/users/user-add-address.md)
   * [User Get All Address](api/users/user-get-all-address.md)
+  * [User Update Address](api/users/user-update-address.md)
 
