@@ -1,6 +1,6 @@
 # Update User Email
 
-{% api-method method="get" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/email\_profile" %}
+{% api-method method="post" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/email\_profile" %}
 {% api-method-summary %}
 Get Cakes
 {% endapi-method-summary %}
@@ -62,7 +62,9 @@ Could not find a cake matching this query.
 {% tab title="Json Body" %}
 ```javascript
 {
-    "email":"5yousefsalmana@iseovels.com"
+    "old_email":"5yousefsalmana@iseovels.com",
+    "new_email":"xxx@iseovels.com"
+    "password":"12345"
 }
 ```
 {% endtab %}
@@ -70,7 +72,9 @@ Could not find a cake matching this query.
 {% tab title="Description" %}
 | field | type | description |
 | :--- | :--- | :--- |
-| email | string | new email for changing |
+| old\_email | string | old email that want change |
+| new\_email | string | new email for change |
+| password | string | password for verification |
 {% endtab %}
 {% endtabs %}
 
@@ -83,7 +87,9 @@ curl --location --request PUT 'http://localhost:8080/v1/users/email_profile' \
 --header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTRkMzgxMGZkMDI3NGZhNDFlOTkzYyIsImVtYWlsIjoiM3hpdXRhbC5taW5nY0ByaGVpb3AuY29tIiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzMwNDA2MTN9.e_5rmTADMwbU2NBgruhzTdEhvzyddNRQrjoGHX11OCc' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "email":"5yousefsalmana@iseovels.com"
+    "old_email":"5yousefsalmana@iseovels.com",
+    "new_email":"xxx@iseovels.com"
+    "password":"12345"
 }'
 ```
 {% endtab %}
@@ -95,7 +101,9 @@ myHeaders.append("Authorization", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6
 myHeaders.append("Content-Type", "application/json");
 
 var raw = JSON.stringify({
-  "email": "5yousefsalmana@iseovels.com"
+    "old_email":"5yousefsalmana@iseovels.com",
+    "new_email":"xxx@iseovels.com"
+    "password":"12345"
 });
 
 var requestOptions = {
@@ -123,8 +131,10 @@ var settings = {
     "Content-Type": "application/json"
   },
   "data": JSON.stringify({
-    "email": "5yousefsalmana@iseovels.com"
-  }),
+    "old_email":"5yousefsalmana@iseovels.com",
+    "new_email":"xxx@iseovels.com"
+    "password":"12345"
+}),
 };
 
 $.ajax(settings).done(function (response) {
