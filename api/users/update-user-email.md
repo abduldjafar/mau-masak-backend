@@ -1,6 +1,6 @@
 # Update User Email
 
-{% api-method method="post" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/email\_profile" %}
+{% api-method method="put" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/email\_profile" %}
 {% api-method-summary %}
 Get Cakes
 {% endapi-method-summary %}
