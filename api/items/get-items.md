@@ -26,7 +26,7 @@ Authentication token to track down who is emptying our stocks.
 The API will do its best to find a cake matching the provided recipe.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="product\_category" type="boolean" %}
+{% api-method-parameter name="product\_category" type="string" %}
 Whether the cake should be gluten-free or not.
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
