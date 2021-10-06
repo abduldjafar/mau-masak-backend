@@ -105,5 +105,18 @@ Could not find a cake matching this query.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example
 
+{% tabs %}
+{% tab title="curl" %}
+```javascript
+curl --location --request GET 'http://localhost:8080/v1/items?house_room=bathroom&product_category=hair&product_sub_category=shampoo' \
+--header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTRkMzgxMGZkMDI3NGZhNDFlOTkzYyIsImVtYWlsIjoiNXlvdXNlZnNhbG1hbmFAaXNlb3ZlbHMuY29tIiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzM2MDA2NzN9.YWNKD6m-n0YbYfomGIChSeHr-HO-kio7QOHQrhCMIGE'
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
