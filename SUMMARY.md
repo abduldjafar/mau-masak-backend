@@ -5,6 +5,7 @@
 ## Mico Api <a id="api"></a>
 
 * [Items](api/items/README.md)
+  * [Get Category](api/items/untitled.md)
   * [Get House Part](api/items/get-house-part.md)
 * [vendors](api/vendors/README.md)
   * [Add Vendors](api/vendors/add-vendors.md)
