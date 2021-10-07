@@ -1,6 +1,6 @@
 # Add Item Into Cart
 
-{% api-method method="post" host="https://api.cakes.com" path="/v1/cakes/:id" %}
+{% api-method method="post" host="https://api.cakes.com" path="/v1/items/cart" %}
 {% api-method-summary %}
 Get Cakes
 {% endapi-method-summary %}
@@ -11,27 +11,11 @@ This endpoint allows you to get free cakes.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" %}
-ID of the cake to get, for free of course.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
 Authentication token to track down who is emptying our stocks.
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="recipe" type="string" %}
-The API will do its best to find a cake matching the provided recipe.
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="gluten" type="boolean" %}
-Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -41,7 +25,14 @@ Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
 ```
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
+{
+    "responses": {
+        "code": 200,
+        "data": null,
+        "isError": false,
+        "message": "success"
+    }
+}
 ```
 {% endapi-method-response-example %}
 
@@ -58,5 +49,44 @@ Could not find a cake matching this query.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Body Request
 
+{% tabs %}
+{% tab title="Json Body" %}
+```javascript
+{
+  "items_id":"615d7aee24605684a912f493",
+	"items_colour":"red",
+	"items_size":"xl",
+	"count":1
+}
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
+
+### Example
+
+{% tabs %}
+{% tab title="curl" %}
+```javascript
+curl --location --request POST 'http://localhost:8080/v1/items/cart' \
+--header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTRkMzgxMGZkMDI3NGZhNDFlOTkzYyIsImVtYWlsIjoiNXlvdXNlZnNhbG1hbmFAaXNlb3ZlbHMuY29tIiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzM2Njk0MTd9.vpjZ6hS7hu_R_9SGmanDDmem2Y9VkodHsF6yJtDKPL4' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "items_id":"615d7aee24605684a912f493",
+	"items_colour":"red",
+	"items_size":"xl",
+	"count":1
+}'
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
