@@ -75,5 +75,18 @@ Could not find a cake matching this query.
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Example
 
+{% tabs %}
+{% tab title="curl" %}
+```javascript
+curl --location --request GET 'http://localhost:8080/v1/items/cart?page=0&limit=5' \
+--header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTRkMzgxMGZkMDI3NGZhNDFlOTkzYyIsImVtYWlsIjoiNXlvdXNlZnNhbG1hbmFAaXNlb3ZlbHMuY29tIiwiZGF0YXR5cGUiOiIiLCJleHAiOjE2MzM2Njk0MTd9.vpjZ6hS7hu_R_9SGmanDDmem2Y9VkodHsF6yJtDKPL4'
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
 
