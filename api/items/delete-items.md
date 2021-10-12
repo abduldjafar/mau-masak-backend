@@ -1,6 +1,6 @@
 # Delete Items
 
-{% swagger method="delete" path="/v1/items/" baseUrl="" summary="" %}
+{% swagger method="delete" path="/v1/items/:items_id" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
