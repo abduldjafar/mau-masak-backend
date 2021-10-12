@@ -2,7 +2,7 @@
 
 * [Initial page](README.md)
 
-## Mico Api <a id="api"></a>
+## Mico Api <a href="api" id="api"></a>
 
 * [cart](api/cart/README.md)
   * [Checkout Transaction](api/cart/checkout-transaction.md)
@@ -12,6 +12,7 @@
   * [Add Item Into Cart](api/cart/add-item-into-cart.md)
 * [Items](api/items/README.md)
   * [Get Items](api/items/get-items.md)
+  * [Update Items](api/items/update-items.md)
   * [Get Category](api/items/untitled.md)
   * [Get Sub Category](api/items/get-sub-category.md)
   * [Get House Part](api/items/get-house-part.md)
@@ -29,4 +30,3 @@
   * [User Add Address](api/users/user-add-address.md)
   * [User Get All Address](api/users/user-get-all-address.md)
   * [User Update Address](api/users/user-update-address.md)
-
