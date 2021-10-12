@@ -1,6 +1,6 @@
 # Update Items
 
-{% swagger method="put" path="/v1/items" baseUrl="" summary="" %}
+{% swagger method="put" path="/v1/items/:items_id" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
