@@ -33,3 +33,5 @@
   * [User Add Address](api/users/user-add-address.md)
   * [User Get All Address](api/users/user-get-all-address.md)
   * [User Update Address](api/users/user-update-address.md)
+* [transactions](api/transactions/README.md)
+  * [Checkout](api/transactions/checkout.md)
