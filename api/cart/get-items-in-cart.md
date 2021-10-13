@@ -1,39 +1,23 @@
 # Get Items In Cart
 
-{% api-method method="get" host="https://api.cakes.com" path="/v1/items/cart" %}
-{% api-method-summary %}
-Get Cakes
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.cakes.com" path="/v1/items/cart" method="get" summary="Get Cakes" %}
+{% swagger-description %}
 This endpoint allows you to get free cakes.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
 Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="limit" type="integer" required=false %}
+{% swagger-parameter in="query" name="limit" type="integer" %}
 
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="page" type="integer" %}
+{% swagger-parameter in="query" name="page" type="integer" %}
 Whether the cake should be gluten-free or not.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Cake successfully retrieved." %}
 ```
 {
     "responses": {
@@ -45,7 +29,14 @@ Cake successfully retrieved.
                 "items_id": "615d7aee24605684a912f493",
                 "items_colour": "red",
                 "items_size": "xl",
-                "count": 1
+                "count": 1,
+                "product_name": "shampo aduhai v3",
+                "price": 544.5,
+                "mico_score": {
+                    "co2": 10,
+                    "water": 10,
+                    "non_recyle": true
+                }
             }
         ],
         "isError": false,
@@ -53,13 +44,9 @@ Cake successfully retrieved.
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="Could not find a cake matching this query." %}
 ```
 {
     "responses": {
@@ -70,10 +57,8 @@ Could not find a cake matching this query.
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Example
 
@@ -89,4 +74,3 @@ curl --location --request GET 'http://localhost:8080/v1/items/cart?page=0&limit=
 
 {% endtab %}
 {% endtabs %}
-
