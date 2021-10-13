@@ -12,6 +12,7 @@
   * [Add Item Into Cart](api/cart/add-item-into-cart.md)
 * [Items](api/items/README.md)
   * [Get Items](api/items/get-items.md)
+  * [Search Items](api/items/search-items.md)
   * [Update Items](api/items/update-items.md)
   * [Delete Items](api/items/delete-items.md)
   * [Get Category](api/items/untitled.md)
