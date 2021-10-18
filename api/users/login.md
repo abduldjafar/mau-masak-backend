@@ -1,29 +1,15 @@
 # Login
 
-{% api-method method="post" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/login" %}
-{% api-method-summary %}
-Users Login
-{% endapi-method-summary %}
+{% swagger baseUrl="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/login" method="post" summary="Users Login" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="body" name="body" type="object" %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=true %}
+{% endswagger-parameter %}
 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Cake successfully retrieved." %}
 ```javascript
 {
     "responses": {
@@ -36,13 +22,9 @@ Cake successfully retrieved.
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="Could not find a cake matching this query." %}
 ```javascript
 {
     "responses": {
@@ -53,10 +35,8 @@ Could not find a cake matching this query.
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Body Request
 
@@ -71,10 +51,10 @@ Could not find a cake matching this query.
 {% endtab %}
 
 {% tab title="Description" %}
-| fieldname | type | descriptipn |
-| :--- | :--- | :--- |
-| email | string | registered email |
-| password | string | users password |
+| fieldname | type   | descriptipn      |
+| --------- | ------ | ---------------- |
+| email     | string | registered email |
+| password  | string | users password   |
 {% endtab %}
 {% endtabs %}
 
@@ -140,4 +120,3 @@ fetch("http://localhost:8080/v1/login", requestOptions)
 ```
 {% endtab %}
 {% endtabs %}
-

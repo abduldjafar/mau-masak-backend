@@ -1,39 +1,23 @@
 # Get All Vendors
 
-{% api-method method="get" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/vendors/all" %}
-{% api-method-summary %}
-Get All Vendors
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/vendors/all" method="get" summary="Get All Vendors" %}
+{% swagger-description %}
 This endpoint allows you to get free cakes.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorizarion" type="string" required=true %}
+{% swagger-parameter in="header" name="Authorizarion" type="string" %}
 token from login
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="page" type="integer" %}
+{% swagger-parameter in="query" name="page" type="integer" %}
 pagination from 0
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="limit" type="integer" %}
+{% swagger-parameter in="query" name="limit" type="integer" %}
 limit of rows
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
 {
     "responses": {
@@ -61,13 +45,9 @@ limit of rows
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="" %}
 ```
 {
     "responses": {
@@ -78,13 +58,9 @@ limit of rows
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="401" description="" %}
 ```
 {
     "responses": {
@@ -95,10 +71,8 @@ limit of rows
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Example
 
@@ -137,4 +111,3 @@ $.ajax(settings).done(function (response) {
 ```
 {% endtab %}
 {% endtabs %}
-

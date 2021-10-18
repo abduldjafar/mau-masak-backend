@@ -1,35 +1,19 @@
 # User Add Address
 
-{% api-method method="post" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/address" %}
-{% api-method-summary %}
-User Add Address
-{% endapi-method-summary %}
+{% swagger baseUrl="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/address" method="post" summary="User Add Address" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=false %}
+{% swagger-parameter in="body" name="body" type="object" %}
 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Cake successfully retrieved." %}
 ```
 {
     "responses": {
@@ -40,13 +24,9 @@ Cake successfully retrieved.
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="Could not find a cake matching this query." %}
 ```
 {
     "responses": {
@@ -57,10 +37,8 @@ Could not find a cake matching this query.
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Body Request
 
@@ -81,16 +59,16 @@ Could not find a cake matching this query.
 {% endtab %}
 
 {% tab title="Description" %}
-| field | type | description |
-| :--- | :--- | :--- |
-| recipent\_name | string |  |
-| country | string |  |
-| phone\_number | string |  |
-| address\_line1 | string |  |
-| address\_line2 | string |  |
-| city | string |  |
-| state | string |  |
-| postal\_code | string |  |
+| field         | type   | description |
+| ------------- | ------ | ----------- |
+| recipent_name | string |             |
+| country       | string |             |
+| phone_number  | string |             |
+| address_line1 | string |             |
+| address_line2 | string |             |
+| city          | string |             |
+| state         | string |             |
+| postal_code   | string |             |
 {% endtab %}
 {% endtabs %}
 
@@ -144,6 +122,8 @@ fetch("http://localhost:8080/v1/users/address", requestOptions)
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
+
+
 {% endtab %}
 
 {% tab title="JavaScript - jQuery" %}
@@ -174,4 +154,3 @@ $.ajax(settings).done(function (response) {
 ```
 {% endtab %}
 {% endtabs %}
-

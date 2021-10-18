@@ -1,35 +1,19 @@
 # Update User Password
 
-{% api-method method="put" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/password\_profile" %}
-{% api-method-summary %}
-Update User Password
-{% endapi-method-summary %}
+{% swagger baseUrl="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/password_profile" method="put" summary="Update User Password" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="object" type="object" required=false %}
+{% swagger-parameter in="body" name="object" type="object" %}
 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Cake successfully retrieved." %}
 ```
 {
     "responses": {
@@ -40,13 +24,9 @@ Cake successfully retrieved.
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="Could not find a cake matching this query." %}
 ```
 {
     "responses": {
@@ -57,10 +37,8 @@ Could not find a cake matching this query.
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 
 
@@ -77,10 +55,10 @@ Could not find a cake matching this query.
 {% endtab %}
 
 {% tab title="Description" %}
-| field | type | description |
-| :--- | :--- | :--- |
-| old\_password | string | old password that will change |
-| new\_password | string | new password for change |
+| field        | type   | description                   |
+| ------------ | ------ | ----------------------------- |
+| old_password | string | old password that will change |
+| new_password | string | new password for change       |
 {% endtab %}
 {% endtabs %}
 
@@ -146,4 +124,3 @@ $.ajax(settings).done(function (response) {
 ```
 {% endtab %}
 {% endtabs %}
-

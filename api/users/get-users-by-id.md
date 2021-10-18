@@ -1,29 +1,15 @@
 # Get Users By ID
 
-{% api-method method="get" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users" %}
-{% api-method-summary %}
-get users by id
-{% endapi-method-summary %}
+{% swagger baseUrl="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users" method="get" summary="get users by id" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 token from login
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```go
 {
     "responses": {
@@ -50,23 +36,14 @@ token from login
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=302 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="302" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="401" description="" %}
 ```
 {
     "responses": {
@@ -77,10 +54,8 @@ token from login
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Example
 
@@ -108,6 +83,8 @@ fetch("http://localhost:8080/v1/users/:id", requestOptions)
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
+
+
 {% endtab %}
 
 {% tab title="JavaScript - jQuery" %}
@@ -125,6 +102,7 @@ $.ajax(settings).done(function (response) {
   console.log(response);
 });
 ```
+
+
 {% endtab %}
 {% endtabs %}
-

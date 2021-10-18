@@ -1,52 +1,30 @@
 # User Update Address
 
-{% api-method method="put" host="https://api.cakes.com" path="/v1/cakes/:id" %}
-{% api-method-summary %}
-Update Address
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.cakes.com" path="/v1/cakes/:id" method="put" summary="Update Address" %}
+{% swagger-description %}
 This endpoint allows you to get free cakes.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=true %}
+{% swagger-parameter in="body" name="body" type="object" %}
 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Cake successfully retrieved." %}
 ```
 {    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="404" description="Could not find a cake matching this query." %}
 ```
 {    "message": "Ain't no cake like that."}
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Request Body
 
@@ -68,18 +46,18 @@ Could not find a cake matching this query.
 {% endtab %}
 
 {% tab title="Description" %}
-| field | type | description |
-| :--- | :--- | :--- |
-| \_id | string | address id |
-| user\_id | string |  |
-| recipent\_name | string |  |
-| country | string |  |
-| phone\_number | string |  |
-| address\_line1 | string |  |
-| address\_line2 | string |  |
-| city | string |  |
-| state | string |  |
-| postal\_code | string |  |
+| field         | type   | description |
+| ------------- | ------ | ----------- |
+| \_id          | string | address id  |
+| user_id       | string |             |
+| recipent_name | string |             |
+| country       | string |             |
+| phone_number  | string |             |
+| address_line1 | string |             |
+| address_line2 | string |             |
+| city          | string |             |
+| state         | string |             |
+| postal_code   | string |             |
 
  
 {% endtab %}
@@ -168,4 +146,3 @@ $.ajax(settings).done(function (response) {
 ```
 {% endtab %}
 {% endtabs %}
-

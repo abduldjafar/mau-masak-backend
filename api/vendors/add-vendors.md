@@ -1,29 +1,15 @@
 # Add Vendors
 
-{% api-method method="post" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/vendors" %}
-{% api-method-summary %}
-Add new Vendors
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/vendors" method="post" summary="Add new Vendors" %}
+{% swagger-description %}
 This endpoint allows you to get free cakes.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="" type="object" required=true %}
+{% swagger-parameter in="body" name="" type="object" %}
 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Cake successfully retrieved." %}
 ```
 {
     "responses": {
@@ -34,13 +20,9 @@ Cake successfully retrieved.
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="401" description="Could not find a cake matching this query." %}
 ```
 {
     "code": 401,
@@ -49,10 +31,8 @@ Could not find a cake matching this query.
     "message": "token contains an invalid number of segments"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Body Requests
 
@@ -174,4 +154,3 @@ $.ajax(settings).done(function (response) {
 ```
 {% endtab %}
 {% endtabs %}
-

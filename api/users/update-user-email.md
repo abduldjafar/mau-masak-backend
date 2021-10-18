@@ -1,29 +1,15 @@
 # Update User Email
 
-{% api-method method="put" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/email\_profile" %}
-{% api-method-summary %}
-Get Cakes
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/email_profile" method="put" summary="Get Cakes" %}
+{% swagger-description %}
 This endpoint allows you to get free cakes.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Cake successfully retrieved." %}
 ```
 {
     "responses": {
@@ -34,13 +20,9 @@ Cake successfully retrieved.
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="404" description="Could not find a cake matching this query." %}
 ```
 {
     "responses": {
@@ -51,10 +33,8 @@ Could not find a cake matching this query.
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Body Request
 
@@ -70,11 +50,11 @@ Could not find a cake matching this query.
 {% endtab %}
 
 {% tab title="Description" %}
-| field | type | description |
-| :--- | :--- | :--- |
-| old\_email | string | old email that want change |
-| new\_email | string | new email for change |
-| password | string | password for verification |
+| field     | type   | description                |
+| --------- | ------ | -------------------------- |
+| old_email | string | old email that want change |
+| new_email | string | new email for change       |
+| password  | string | password for verification  |
 {% endtab %}
 {% endtabs %}
 
@@ -118,6 +98,8 @@ fetch("http://localhost:8080/v1/users/email_profile", requestOptions)
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
 ```
+
+
 {% endtab %}
 
 {% tab title="JavaScript - jQuery" %}
@@ -143,4 +125,3 @@ $.ajax(settings).done(function (response) {
 ```
 {% endtab %}
 {% endtabs %}
-

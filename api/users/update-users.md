@@ -1,35 +1,19 @@
 # Update Users Profile
 
-{% api-method method="put" host="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/profile" %}
-{% api-method-summary %}
-Update Users Profile
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://mico-backend-services-i5jta7dz4q-uc.a.run.app" path="/v1/users/profile" method="put" summary="Update Users Profile" %}
+{% swagger-description %}
 This endpoint allows you to get free cakes.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
 Authentication token to track down who is emptying our stocks.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="body" type="object" required=false %}
+{% swagger-parameter in="body" name="body" type="object" %}
 all datas should be send and not empty
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Cake successfully retrieved." %}
 ```javascript
 {
     "responses": {
@@ -40,13 +24,9 @@ Cake successfully retrieved.
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="Could not find a cake matching this query." %}
 ```javascript
 {
     "responses": {
@@ -57,13 +37,9 @@ Could not find a cake matching this query.
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="401" description="" %}
 ```
 {
     "responses": {
@@ -74,10 +50,8 @@ Could not find a cake matching this query.
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Body Request
 
@@ -94,12 +68,11 @@ Could not find a cake matching this query.
 {% endtab %}
 
 {% tab title="Description" %}
-| fieldname | type | description |
-| :--- | :--- | :--- |
-| name | string |  |
-| birthdate | string |  |
-| gender | string |  |
-|  |  |  |
+| fieldname | type   | description |
+| --------- | ------ | ----------- |
+| name      | string |             |
+| birthdate | string |             |
+| gender    | string |             |
+|           |        |             |
 {% endtab %}
 {% endtabs %}
-
