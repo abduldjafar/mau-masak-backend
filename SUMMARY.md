@@ -35,5 +35,6 @@
   * [User Get All Address](api/users/user-get-all-address.md)
   * [User Update Address](api/users/user-update-address.md)
 * [transactions](api/transactions/README.md)
+  * [Buy Items](api/transactions/buy-items.md)
   * [Checkout](api/transactions/checkout.md)
   * [Checkout Selected Items](api/transactions/checkout-selected-items.md)
