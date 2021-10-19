@@ -5,7 +5,7 @@
 
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" required="true" %}
+{% swagger-parameter in="header" name="Authorization" required="true" type="" %}
 
 {% endswagger-parameter %}
 
