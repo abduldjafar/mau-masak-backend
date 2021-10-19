@@ -36,7 +36,7 @@
 {% tabs %}
 {% tab title="Json Body" %}
 ```
-// this part can get from Checkout selected items
+// this part can get from Checkout request responses
 {
     "cart_items": [
         {
