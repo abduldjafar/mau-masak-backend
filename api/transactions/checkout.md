@@ -1,4 +1,4 @@
-# Checkout Selected Items
+# Checkout
 
 {% swagger method="post" path="/v1/users/transaction/select" baseUrl="" summary="" %}
 {% swagger-description %}
@@ -79,9 +79,7 @@
 {% tabs %}
 {% tab title="Json Body" %}
 ```javascript
-{
-    "charts_id":["xxxxx","yyyy"]
-}
+{}
 ```
 {% endtab %}
 

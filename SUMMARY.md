@@ -5,7 +5,7 @@
 ## Mico Api <a href="api" id="api"></a>
 
 * [cart](api/cart/README.md)
-  * [Checkout Transaction](api/cart/checkout-transaction.md)
+  * [Select Cart](api/cart/select-cart.md)
   * [Update Item In Cart](api/cart/update-item-in-cart.md)
   * [Delete Item In Cart](api/cart/delete-item-in-cart.md)
   * [Get Items In Cart](api/cart/get-items-in-cart.md)
