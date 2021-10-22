@@ -39,5 +39,6 @@
   * [Get Transaction](api/transactions/get-transaction.md)
   * [Checkout](api/transactions/checkout.md)
 * [content](api/content/README.md)
-  * [Create](api/content/create.md)
-  * [Get Contents](api/content/get-contents.md)
+  * [create](api/content/create.md)
+  * [get contents](api/content/get-contents.md)
+  * [update](api/content/update.md)
