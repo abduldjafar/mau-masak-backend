@@ -43,8 +43,11 @@
 ```javascript
 {
     "body_content":"",
-    "title:"",
-    "city":""
+    "title":"",
+    "city":"",
+    "tags","",
+    "sub_tags":"",
+    "sub_sub_tags":""
 }
 ```
 {% endtab %}
