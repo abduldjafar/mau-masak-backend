@@ -1,4 +1,4 @@
-# Create
+# create
 
 {% swagger method="post" path="/v1/users/content" baseUrl="" summary="" %}
 {% swagger-description %}
@@ -42,7 +42,9 @@
 {% tab title="Json Body" %}
 ```javascript
 {
-    "body_content":""
+    "body_content":"",
+    "title:"",
+    "city":""
 }
 ```
 {% endtab %}
