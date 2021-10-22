@@ -40,3 +40,4 @@
   * [Checkout](api/transactions/checkout.md)
 * [content](api/content/README.md)
   * [Create](api/content/create.md)
+  * [Get Contents](api/content/get-contents.md)
