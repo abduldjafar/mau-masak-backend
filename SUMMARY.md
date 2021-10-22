@@ -38,3 +38,5 @@
   * [Buy Items](api/transactions/buy-items.md)
   * [Get Transaction](api/transactions/get-transaction.md)
   * [Checkout](api/transactions/checkout.md)
+* [content](api/content/README.md)
+  * [Create](api/content/create.md)
