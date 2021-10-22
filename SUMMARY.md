@@ -42,3 +42,4 @@
   * [create](api/content/create.md)
   * [get contents](api/content/get-contents.md)
   * [update](api/content/update.md)
+  * [delete](api/content/delete.md)
