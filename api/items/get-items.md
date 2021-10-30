@@ -21,6 +21,14 @@ The API will do its best to find a cake matching the provided recipe.
 Whether the cake should be gluten-free or not.
 {% endswagger-parameter %}
 
+{% swagger-parameter in="query" name="limit" type="int" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="page" type="int" %}
+
+{% endswagger-parameter %}
+
 {% swagger-response status="200" description="Cake successfully retrieved." %}
 ```
 {
