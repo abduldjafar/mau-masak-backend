@@ -43,5 +43,6 @@
 * [content](api/content/README.md)
   * [create](api/content/create.md)
   * [get contents](api/content/get-contents.md)
+  * [Get Spesific Content](api/content/get-spesific-content.md)
   * [update](api/content/update.md)
   * [delete](api/content/delete.md)
