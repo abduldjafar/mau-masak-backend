@@ -1,6 +1,6 @@
 # Get Spesific Item
 
-{% swagger method="get" path="/v1/users/content/data/" baseUrl="" summary="" %}
+{% swagger method="get" path="/v1/users/content/data" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -921,7 +921,7 @@
 {% tabs %}
 {% tab title="example curl" %}
 ```
-// Some code
+curl --location --request GET 'http://localhost:8080/v1/users/content/data/617bef0d8063fd8e8ec1c7eb'
 ```
 {% endtab %}
 
