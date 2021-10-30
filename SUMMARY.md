@@ -12,7 +12,6 @@
   * [Add Item Into Cart](api/cart/add-item-into-cart.md)
 * [Items](api/items/README.md)
   * [Get Items](api/items/get-items.md)
-  * [Get Spesific Item](api/items/get-spesific-item.md)
   * [Get list Mico Score](api/items/get-list-mico-score.md)
   * [Search Items](api/items/search-items.md)
   * [Update Items](api/items/update-items.md)
