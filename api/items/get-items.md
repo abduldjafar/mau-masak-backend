@@ -36,45 +36,92 @@ Whether the cake should be gluten-free or not.
         "code": 200,
         "data": [
             {
-                "_id": "615d7361a7404a8a4a7631e5",
-                "house_room": "bathroom",
-                "product_category": "hair",
-                "product_sub_category": "shampoo",
-                "product_name": "shampo aduhai",
-                "price": 300.23,
+                "_id": "617bcf408527296121bdc0b8",
+                "vendor_id": "",
+                "vendor_description": "",
+                "brand_name": "Minimal organics",
+                "house_room": "Bathroom",
+                "product_category": "Hair",
+                "product_sub_category": "Shampoo",
+                "product_name": "Hair Soap Ayurvedic 80g",
+                "price": 14,
+                "stripe_price_id": "price_1JpsT6F8sq9RvyoVynrMgfui",
+                "product_stripe_id": "prod_KUsDXx8sxd8FuZ",
                 "mico_score": {
-                    "co2": 90,
-                    "water": 80,
-                    "non_recyle": true
+                    "co2": 0.06,
+                    "water": 2.81,
+                    "non_recyle": false
                 },
                 "mico_values": {
-                    "one_hundred_percent_natureal": true,
-                    "plastic_free": true,
-                    "is_recycling": true,
-                    "palm_oil_free": false,
-                    "vegan": true,
-                    "is_co2_exist": false
+                    "vegan": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "plastic_free": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "organic": {
+                        "active": true,
+                        "value": "90%"
+                    },
+                    "glycerin_free": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "palm_oil_free": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "local": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "compostable": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "biodegradable": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "recyclable": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "ethically_produced": {
+                        "active": false,
+                        "value": ""
+                    }
                 },
-                "product_overview": "",
+                "product_overview": "Rich in saponins, vitamins and antioxidants that make your hair shiny improving hair’s texture. Nourishes follicles. How to use: Make sure to keep your shampoo dry before and after every use and place it on soap dish with drainage to remove any excess water. \n If you’re using your shampoo on the go, make sure to let it dry before packing. To prevent contamination and breakage, keep your shampoo in a small box or hard container for travelling. For all hair types.",
                 "buying_details": {
-                    "country_origin": "xx",
-                    "delivery_time": "xx",
-                    "delivery_packaging": "xx"
+                    "country_origin": "Switzerland",
+                    "delivery_time": "3-5 business days",
+                    "delivery_packaging": "Sugarcane Bagasse"
                 },
+                "howto_handle": "",
+                "manufacturing_address": "",
+                "shipment_from_address": "",
                 "amount": [
                     {
+                        "items_id": "617bcf408527296121bdc0b8",
                         "colour": "red",
                         "size": "xl",
                         "count": 12
                     },
                     {
+                        "items_id": "617bcf408527296121bdc0b8",
                         "colour": "black",
                         "size": "xl",
                         "count": 10
                     }
                 ],
                 "star": 0,
-                "created_at": "2021-10-06T09:58:57.452Z"
+                "created_at": "2021-10-29T10:38:55.771Z",
+                "type_of_packaging": "HDPE",
+                "weight": 9,
+                "picture": "https://storage.googleapis.com/mico_project/item/617bcf408527296121bdc0b8/ayurvedic.webp"
             }
         ],
         "isError": false,
