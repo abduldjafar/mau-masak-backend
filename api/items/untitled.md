@@ -22,7 +22,8 @@ The API will do its best to find a cake matching the provided recipe.
             {
                 "_id": "615c3b21809e49eabc865cd9",
                 "house_part_id": "615a5a8b6f16322e92208508",
-                "name": "asoi"
+                "name": "asoi",
+                "banner_text":"this is banner for category"
             }
         ],
         "isError": false,
