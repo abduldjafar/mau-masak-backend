@@ -123,7 +123,7 @@ Whether the cake should be gluten-free or not.
                     "created_at": "2021-10-29T10:38:55.771Z",
                     "type_of_packaging": "HDPE",
                     "weight": 9,
-                    "picture": "https://storage.googleapis.com/mico_project/item/617bcf408527296121bdc0b8/ayurvedic.webp",
+                    "pictures": ["https://storage.googleapis.com/mico_project/item/617bcf408527296121bdc0b8/ayurvedic.webp"],
                     "details_category": {
                         "house_room": "",
                         "category": "",
