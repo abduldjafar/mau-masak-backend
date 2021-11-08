@@ -17,6 +17,18 @@
 
 {% endswagger-parameter %}
 
+{% swagger-parameter in="query" name="tags" type="string" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="sub_tags" type="string" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="sub_sub_tags" type="Array(string)" %}
+
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="" %}
 ```javascript
 {
@@ -928,3 +940,19 @@
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+### Example
+
+{% tabs %}
+{% tab title="curl" %}
+
+
+```javascript
+curl --location --request GET 'http://localhost:8080/v1/users/content?tags=Bathroom&sub_tags=Hair&sub_sub_tags=Shampoo&sub_sub_tags=Shampoo-2&sub_sub_tags=Shampoo-3'
+```
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
