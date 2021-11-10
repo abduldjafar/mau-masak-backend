@@ -40,6 +40,7 @@
   * [Get Transaction](api/transactions/get-transaction.md)
   * [Checkout](api/transactions/checkout.md)
 * [content](api/content/README.md)
+  * [list country](api/content/list-country.md)
   * [create](api/content/create.md)
   * [upload thumbnail](api/content/upload-thumbnail.md)
   * [get contents](api/content/get-contents.md)
