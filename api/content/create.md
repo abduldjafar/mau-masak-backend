@@ -160,9 +160,7 @@
         "version": "2.22.2"
     },
     "title": "",
-    "city": "",
-    "tags": "",
-    "sub_tags": "",
+    "country": "",
     "sub_sub_tags": [
         ""
     ]
