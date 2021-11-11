@@ -47,3 +47,5 @@
   * [Get Spesific Content](api/content/get-spesific-content.md)
   * [update](api/content/update.md)
   * [delete](api/content/delete.md)
+* [admin](api/admin/README.md)
+  * [login](api/admin/login.md)
