@@ -49,3 +49,4 @@
   * [delete](api/content/delete.md)
 * [admin](api/admin/README.md)
   * [login](api/admin/login.md)
+  * [dashboard aggregation](api/admin/dashboard-aggregation.md)
