@@ -53,3 +53,4 @@
   * [dashboard micopedia](api/admin/dashboard-micopedia.md)
   * [dashboard order](api/admin/dashboard-order.md)
   * [dashboard product](api/admin/dashboard-product.md)
+  * [dashboard vendor](api/admin/dashboard-vendor.md)

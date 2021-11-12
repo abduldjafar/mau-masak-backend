@@ -1,19 +1,19 @@
-# dashboard product
+# dashboard vendor
 
-{% swagger method="get" path="/v1/admin/dasboard_product" baseUrl="" summary="" %}
+{% swagger method="get" path="/v1/admin/dasboard_vendor" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
-
-{% swagger-parameter in="header" name="Authorization" required="true" %}
-
-{% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="page" type="int" %}
 
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="limit" type="int" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="Authorization" required="true" %}
 
 {% endswagger-parameter %}
 
@@ -118,102 +118,6 @@
                     "sub_category": ""
                 },
                 "average_yearly_consumption": 3
-            },
-            {
-                "_id": "617e4c43117bd704d9e6051c",
-                "vendor_id": "",
-                "vendor_description": "",
-                "brand_name": "Eliah Sahil",
-                "house_room": "617bc57c6039d894317b2b71",
-                "product_category": "617bc701b6028c6baeb8bacf",
-                "product_sub_category": "617bc91eb6028c6baeb8bad4",
-                "product_name": "Powder Toothpaste Ginseng Clove 60g",
-                "price": 14.4,
-                "stripe_price_id": "price_1JpsWTF8sq9RvyoV0M0SLRly",
-                "product_stripe_id": "prod_KUsH3MAYAHm9fx",
-                "mico_score": {
-                    "co2": 0.62,
-                    "water": 28.145,
-                    "non_recyle": false
-                },
-                "mico_values": {
-                    "vegan": {
-                        "active": false,
-                        "value": ""
-                    },
-                    "plastic_free": {
-                        "active": false,
-                        "value": ""
-                    },
-                    "organic": {
-                        "active": false,
-                        "value": ""
-                    },
-                    "glycerin_free": {
-                        "active": false,
-                        "value": ""
-                    },
-                    "palm_oil_free": {
-                        "active": false,
-                        "value": ""
-                    },
-                    "local": {
-                        "active": true,
-                        "value": "AT"
-                    },
-                    "compostable": {
-                        "active": true,
-                        "value": "Refills"
-                    },
-                    "biodegradable": {
-                        "active": false,
-                        "value": ""
-                    },
-                    "recyclable": {
-                        "active": false,
-                        "value": ""
-                    },
-                    "ethically_produced": {
-                        "active": true,
-                        "value": "AT"
-                    }
-                },
-                "product_overview": "This certified organic dental powder cleans the teeth thoroughly and provides a gentle whitening. Silica gently removes tooth stains, provides gentle whitening and helps to maintain the natural whiteness of your teeth. Mixed with pure plant extracts of ginger, chamomile, cinnamon and marigold, it ensures healthy gums and healthy oral flora. How to use: Carefully squirt the powder onto a wet toothbrush or directly into the mouth and clean teeth for about three minutes without strong pressure. Then rinse your mouth thoroughly with water. For daily use, it is recommended to use coconut oil instead of water to reduce the abrasive effect. For sensitive teeth, use maximum twice a week. Refill instead of throwing away: The recyclable glass packaging can be refilled. Refill bag and travel size is made of vegetable material, 100% biodegradable and compostable.",
-                "buying_details": {
-                    "country_origin": "Switzerland",
-                    "delivery_time": "2-5 business days",
-                    "delivery_packaging": "Glass"
-                },
-                "howto_handle": "",
-                "manufacturing_address": "",
-                "shipment_from_address": "",
-                "amount": [
-                    {
-                        "items_id": "617bd0118527296121bdc0bb",
-                        "colour": "red",
-                        "size": "xl",
-                        "count": 12,
-                        "sold": 0
-                    },
-                    {
-                        "items_id": "617bd0118527296121bdc0bb",
-                        "colour": "black",
-                        "size": "xl",
-                        "count": 10,
-                        "sold": 0
-                    }
-                ],
-                "star": 0,
-                "created_at": "2021-10-29T10:42:24.44Z",
-                "type_of_packaging": "HDPE",
-                "weight": 180,
-                "pictures": null,
-                "details_category": {
-                    "house_room": "",
-                    "category": "",
-                    "sub_category": ""
-                },
-                "average_yearly_consumption": 0.5
             },
             {
                 "_id": "617e4c43117bd704d9e6051d",
@@ -406,6 +310,102 @@
                     "sub_category": ""
                 },
                 "average_yearly_consumption": 2
+            },
+            {
+                "_id": "617e4c43117bd704d9e6051c",
+                "vendor_id": "",
+                "vendor_description": "",
+                "brand_name": "Eliah Sahil",
+                "house_room": "617bc57c6039d894317b2b71",
+                "product_category": "617bc701b6028c6baeb8bacf",
+                "product_sub_category": "617bc91eb6028c6baeb8bad4",
+                "product_name": "Powder Toothpaste Ginseng Clove 60g",
+                "price": 14.4,
+                "stripe_price_id": "price_1JpsWTF8sq9RvyoV0M0SLRly",
+                "product_stripe_id": "prod_KUsH3MAYAHm9fx",
+                "mico_score": {
+                    "co2": 0.62,
+                    "water": 28.145,
+                    "non_recyle": false
+                },
+                "mico_values": {
+                    "vegan": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "plastic_free": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "organic": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "glycerin_free": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "palm_oil_free": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "local": {
+                        "active": true,
+                        "value": "AT"
+                    },
+                    "compostable": {
+                        "active": true,
+                        "value": "Refills"
+                    },
+                    "biodegradable": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "recyclable": {
+                        "active": false,
+                        "value": ""
+                    },
+                    "ethically_produced": {
+                        "active": true,
+                        "value": "AT"
+                    }
+                },
+                "product_overview": "This certified organic dental powder cleans the teeth thoroughly and provides a gentle whitening. Silica gently removes tooth stains, provides gentle whitening and helps to maintain the natural whiteness of your teeth. Mixed with pure plant extracts of ginger, chamomile, cinnamon and marigold, it ensures healthy gums and healthy oral flora. How to use: Carefully squirt the powder onto a wet toothbrush or directly into the mouth and clean teeth for about three minutes without strong pressure. Then rinse your mouth thoroughly with water. For daily use, it is recommended to use coconut oil instead of water to reduce the abrasive effect. For sensitive teeth, use maximum twice a week. Refill instead of throwing away: The recyclable glass packaging can be refilled. Refill bag and travel size is made of vegetable material, 100% biodegradable and compostable.",
+                "buying_details": {
+                    "country_origin": "Switzerland",
+                    "delivery_time": "2-5 business days",
+                    "delivery_packaging": "Glass"
+                },
+                "howto_handle": "",
+                "manufacturing_address": "",
+                "shipment_from_address": "",
+                "amount": [
+                    {
+                        "items_id": "617bd0118527296121bdc0bb",
+                        "colour": "red",
+                        "size": "xl",
+                        "count": 12,
+                        "sold": 0
+                    },
+                    {
+                        "items_id": "617bd0118527296121bdc0bb",
+                        "colour": "black",
+                        "size": "xl",
+                        "count": 10,
+                        "sold": 0
+                    }
+                ],
+                "star": 0,
+                "created_at": "2021-10-29T10:42:24.44Z",
+                "type_of_packaging": "HDPE",
+                "weight": 180,
+                "pictures": null,
+                "details_category": {
+                    "house_room": "",
+                    "category": "",
+                    "sub_category": ""
+                },
+                "average_yearly_consumption": 0.5
             },
             {
                 "_id": "617e4c43117bd704d9e6051f",
