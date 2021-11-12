@@ -51,3 +51,5 @@
   * [login](api/admin/login.md)
   * [dashboard overview](api/admin/dashboard-overview.md)
   * [dashboard micopedia](api/admin/dashboard-micopedia.md)
+  * [dashboard order](api/admin/dashboard-order.md)
+  * [dashboard product](api/admin/dashboard-product.md)
