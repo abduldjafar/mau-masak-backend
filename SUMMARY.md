@@ -49,4 +49,5 @@
   * [delete](api/content/delete.md)
 * [admin](api/admin/README.md)
   * [login](api/admin/login.md)
-  * [dashboard aggregation](api/admin/dashboard-aggregation.md)
+  * [dashboard overview](api/admin/dashboard-overview.md)
+  * [dashboard micopedia](api/admin/dashboard-micopedia.md)
