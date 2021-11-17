@@ -19,20 +19,31 @@
 {% tabs %}
 {% tab title="Json Body" %}
 ```
+// can choose one or more for update
 {
-    "brand_or_vendor": "manga asiksssss",
-    "HQ_country": "",
-    "business_model": "",
-    "phone_number": "",
-    "email": "manga@asik.com",
-    "address": "",
-    "owner_name": "",
-    "representative_name": "",
-    "official_register_name": "",
+    "vendor_name": "",
+    "registered_name": "",
+    "country_origin": "",
     "vat_number": "",
-    "bank_account": "",
-    "certified_b_corporation": "",
-    "category_or_products": ""
+    "businnes_models": "",
+    "certification": "",
+    "specialization_product": "",
+    "vendor_address": "",
+    "state": "",
+    "city": "",
+    "postal_code": "",
+    "manufacturing_address": "",
+    "vendor_email": "",
+    "phone_numbers": "",
+    "vendor_website": "",
+    "vendor_owner_name": "",
+    "vendor_owner_phone_numbers": "",
+    "vendor_owner_representative_name": "",
+    "vendor_owner_email": "",
+    "order_channel": "",
+    "billing_conditions": "",
+    "payment_terms": "",
+    "currency": ""
 }
 ```
 {% endtab %}
@@ -51,19 +62,29 @@ curl --location --request PUT 'http://localhost:8080/v1/vendors/61525154347c025c
 --header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNjQwZTkwMjI5NThkNGNkYmQ5MWVlMSIsImVtYWlsIjoicnV0cmV0dGFzb2ljcnUtNzEwM0B5b3BtYWlsLmNvbSIsImRhdGF0eXBlIjoiYyIsImV4cCI6MTYzNDA5NDEyOH0.gDe3UY1veX_m_3EgkeLN4F5fkGVgI-WUyGKETltnF2I' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "brand_or_vendor": "manga asiksssss",
-    "HQ_country": "",
-    "business_model": "",
-    "phone_number": "",
-    "email": "manga@asik.com",
-    "address": "",
-    "owner_name": "",
-    "representative_name": "",
-    "official_register_name": "",
+    "vendor_name": "",
+    "registered_name": "",
+    "country_origin": "",
     "vat_number": "",
-    "bank_account": "",
-    "certified_b_corporation": "",
-    "category_or_products": ""
+    "businnes_models": "",
+    "certification": "",
+    "specialization_product": "",
+    "vendor_address": "",
+    "state": "",
+    "city": "",
+    "postal_code": "",
+    "manufacturing_address": "",
+    "vendor_email": "",
+    "phone_numbers": "",
+    "vendor_website": "",
+    "vendor_owner_name": "",
+    "vendor_owner_phone_numbers": "",
+    "vendor_owner_representative_name": "",
+    "vendor_owner_email": "",
+    "order_channel": "",
+    "billing_conditions": "",
+    "payment_terms": "",
+    "currency": ""
 }'
 ```
 {% endtab %}

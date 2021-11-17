@@ -21,7 +21,6 @@
   * [Get House Part](api/items/get-house-part.md)
 * [vendors](api/vendors/README.md)
   * [Update Vendors](api/vendors/update-vendors.md)
-  * [Update Vendors](api/vendors/update-vendors-1.md)
   * [Add Vendors](api/vendors/add-vendors.md)
   * [Get All Vendors](api/vendors/get-all-vendors.md)
 * [users](api/users/README.md)
