@@ -21,7 +21,7 @@
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="sub_tags" type="string" %}
+{% swagger-parameter in="query" name="sub_tags" type="Array(string)" %}
 
 {% endswagger-parameter %}
 
