@@ -39,21 +39,7 @@ This endpoint allows you to get free cakes.
 {% tabs %}
 {% tab title="Json Body" %}
 ```javascript
-{
-    "brand_or_vendor": "manga asik",
-    "HQ_country": "",
-    "business_model": "",
-    "phone_number": "",
-    "email": "manga@asik.com",
-    "address": "",
-    "owner_name": "",
-    "representative_name": "",
-    "official_register_name": "",
-    "vat_number": "",
-    "bank_account": "",
-    "certified_b_corporation": "",
-    "category_or_products": ""
-}
+{}
 ```
 {% endtab %}
 
@@ -69,21 +55,7 @@ This endpoint allows you to get free cakes.
 ```javascript
 curl --location --request POST 'https://mico-backend-services-i5jta7dz4q-uc.a.run.app/v1/vendors' \
 --header 'Content-Type: application/json' \
---data-raw '{
-    "brand_or_vendor": "manga asik",
-    "HQ_country": "",
-    "business_model": "",
-    "phone_number": "",
-    "email": "manga@asik.com",
-    "address": "",
-    "owner_name": "",
-    "representative_name": "",
-    "official_register_name": "",
-    "vat_number": "",
-    "bank_account": "",
-    "certified_b_corporation": "",
-    "category_or_products": ""
-}'
+--data-raw '{}'
 ```
 {% endtab %}
 
