@@ -49,6 +49,7 @@ item id for update
 {% tabs %}
 {% tab title="json body" %}
 ```javascript
+// can choose one or more from those field
 {
     "vendor_id": "",
     "vendor_description": "",
