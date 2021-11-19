@@ -51,6 +51,7 @@
   * [create sub tags](api/content/create-sub-tags.md)
   * [get tags](api/content/get-tags.md)
   * [get sub tags](api/content/get-sub-tags.md)
+  * [get sub sub tags](api/content/get-sub-sub-tags.md)
   * [create sub sub tags](api/content/create-sub-sub-tags.md)
 * [admin](api/admin/README.md)
   * [login](api/admin/login.md)
