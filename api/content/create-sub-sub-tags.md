@@ -1,6 +1,6 @@
-# create sub tags
+# create sub sub tags
 
-{% swagger method="post" path="/v1/users/content/sub_tags" baseUrl="" summary="" %}
+{% swagger method="post" path="/v1/users/content/sub_sub_tags" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -29,8 +29,9 @@
 {% tab title="body" %}
 ```
 {
-    "conten_tags_id":"61780c138fcc63ed963c8cf8",
-    "name":"sub_asoi"
+    "conten_tags_id":"",
+    "conten_sub_tags_id":"",
+    "name":""
 }
 ```
 {% endtab %}
@@ -45,12 +46,13 @@
 {% tabs %}
 {% tab title="curl" %}
 ```
-curl --location --request POST 'http://localhost:8080/v1/users/content/sub_tags' \
---header 'Authorization: xxxxxx' \
+curl --location --request POST 'http://localhost:8080/v1/users/content/sub_sub_tags' \
+--header 'Authorization: xxxxx' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "conten_tags_id":"61780c138fcc63ed963c8cf8",
-    "name":"sub_asoi"
+    "conten_tags_id":"",
+    "conten_sub_tags_id":"",
+    "name":""
 }'
 ```
 {% endtab %}

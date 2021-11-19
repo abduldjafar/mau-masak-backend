@@ -48,6 +48,7 @@
   * [update](api/content/update.md)
   * [create tags](api/content/create-tags.md)
   * [create sub tags](api/content/create-sub-tags.md)
+  * [create sub sub tags](api/content/create-sub-sub-tags.md)
   * [delete](api/content/delete.md)
 * [admin](api/admin/README.md)
   * [login](api/admin/login.md)
