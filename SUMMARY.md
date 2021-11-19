@@ -46,6 +46,7 @@
   * [get contents](api/content/get-contents.md)
   * [Get Spesific Content](api/content/get-spesific-content.md)
   * [update](api/content/update.md)
+  * [create tags](api/content/create-tags.md)
   * [delete](api/content/delete.md)
 * [admin](api/admin/README.md)
   * [login](api/admin/login.md)
