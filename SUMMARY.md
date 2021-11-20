@@ -16,6 +16,7 @@
   * [Search Items](api/items/search-items.md)
   * [Update Items](api/items/update-items.md)
   * [add item](api/items/add-item.md)
+  * [add item sku](api/items/add-item-sku.md)
   * [Delete Items](api/items/delete-items.md)
   * [Get Category](api/items/untitled.md)
   * [Get Sub Category](api/items/get-sub-category.md)
