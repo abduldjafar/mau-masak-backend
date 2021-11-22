@@ -63,3 +63,4 @@
   * [dashboard order](api/admin/dashboard-order.md)
   * [dashboard product](api/admin/dashboard-product.md)
   * [dashboard vendor](api/admin/dashboard-vendor.md)
+  * [get transaction by customer\_id](api/admin/get-transaction-by-customer\_id.md)
