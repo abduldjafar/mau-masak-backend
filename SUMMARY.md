@@ -56,6 +56,7 @@
   * [create sub sub tags](api/content/create-sub-sub-tags.md)
 * [admin](api/admin/README.md)
   * [login](api/admin/login.md)
+  * [update password](api/admin/update-password.md)
   * [update profile](api/admin/update-profile.md)
   * [dashboard overview](api/admin/dashboard-overview.md)
   * [dashboard micopedia](api/admin/dashboard-micopedia.md)
