@@ -65,3 +65,4 @@
   * [dashboard vendor](api/admin/dashboard-vendor.md)
   * [get transaction by customer\_id](api/admin/get-transaction-by-customer\_id.md)
   * [get product by vendor\_id](api/admin/get-product-by-vendor\_id.md)
+  * [get persona questions](api/admin/get-persona-questions.md)
