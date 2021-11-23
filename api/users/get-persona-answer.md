@@ -5,23 +5,23 @@
 
 {% endswagger-description %}
 
-{% swagger-parameter in="query" required="true" name="question_number_one" %}
+{% swagger-parameter in="query" required="true" name="question_number_one" type="string" %}
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="question_number_two" required="true" %}
+{% swagger-parameter in="query" name="question_number_two" required="true" type="string" %}
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="question_number_three" required="true" %}
+{% swagger-parameter in="query" name="question_number_three" required="true" type="string" %}
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="question_number_four" required="true" %}
+{% swagger-parameter in="query" name="question_number_four" required="true" type="string" %}
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="question_number_five" required="true" %}
+{% swagger-parameter in="query" name="question_number_five" required="true" type="string" %}
 
 {% endswagger-parameter %}
 
