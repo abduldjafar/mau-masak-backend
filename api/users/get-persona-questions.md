@@ -1,6 +1,6 @@
 # get persona questions
 
-{% swagger method="get" path="/v1/admin/persona_questions" baseUrl="" summary="" %}
+{% swagger method="get" path="/v1/user/persona_questions" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
