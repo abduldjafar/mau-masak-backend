@@ -1,6 +1,6 @@
 # add persona answer
 
-{% swagger method="post" path="/admin/persona_answer" baseUrl="" summary="" %}
+{% swagger method="post" path="/v1/admin/persona_answer" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
