@@ -50,7 +50,11 @@ limit of rows
                 "payment_terms": "",
                 "currency": "",
                 "user_type": "",
-                "location": ""
+                "location": "",
+                "bank_name": "",
+                "account_number": "",
+                "account_holder": "",
+                "exp_date": "0001-01-01T00:00:00Z"
             },
             {
                 "_id": "619c9fc00db3748cdf2b63d2",
@@ -79,7 +83,11 @@ limit of rows
                 "payment_terms": "",
                 "currency": "",
                 "user_type": "",
-                "location": ""
+                "location": "",
+                "bank_name": "",
+                "account_number": "",
+                "account_holder": "",
+                "exp_date": "0001-01-01T00:00:00Z"
             },
             {
                 "_id": "619ce376f48fa28aa89367c0",
@@ -108,7 +116,11 @@ limit of rows
                 "payment_terms": "",
                 "currency": "",
                 "user_type": "",
-                "location": ""
+                "location": "",
+                "bank_name": "",
+                "account_number": "",
+                "account_holder": "",
+                "exp_date": "0001-01-01T00:00:00Z"
             },
             {
                 "_id": "619ce37cf48fa28aa89367c1",
@@ -137,7 +149,11 @@ limit of rows
                 "payment_terms": "",
                 "currency": "",
                 "user_type": "",
-                "location": ""
+                "location": "",
+                "bank_name": "",
+                "account_number": "",
+                "account_holder": "",
+                "exp_date": "0001-01-01T00:00:00Z"
             },
             {
                 "_id": "619ddabe971e7108b23f1c11",
@@ -166,7 +182,11 @@ limit of rows
                 "payment_terms": "",
                 "currency": "",
                 "user_type": "",
-                "location": ""
+                "location": "",
+                "bank_name": "",
+                "account_number": "",
+                "account_holder": "",
+                "exp_date": "0001-01-01T00:00:00Z"
             },
             {
                 "_id": "619ddd1ced772372b6cf504c",
@@ -195,7 +215,11 @@ limit of rows
                 "payment_terms": "",
                 "currency": "",
                 "user_type": "",
-                "location": ""
+                "location": "",
+                "bank_name": "",
+                "account_number": "",
+                "account_holder": "",
+                "exp_date": "0001-01-01T00:00:00Z"
             },
             {
                 "_id": "619ddd42ed772372b6cf504d",
@@ -224,7 +248,77 @@ limit of rows
                 "payment_terms": "",
                 "currency": "",
                 "user_type": "",
-                "location": ""
+                "location": "",
+                "bank_name": "",
+                "account_number": "",
+                "account_holder": "",
+                "exp_date": "0001-01-01T00:00:00Z"
+            },
+            {
+                "_id": "619e0464ac948e64fa0c0d24",
+                "vendor_name": "",
+                "registered_name": "",
+                "country_origin": "",
+                "vat_number": "",
+                "businnes_models": "",
+                "certification": "",
+                "specialization_product": "",
+                "vendor_address": "",
+                "state": "",
+                "city": "",
+                "postal_code": "",
+                "manufacturing_address": "",
+                "vendor_email": "",
+                "phone_numbers": "",
+                "vendor_website": "",
+                "created_at": "0001-01-01T00:00:00Z",
+                "vendor_owner_name": "",
+                "vendor_owner_phone_numbers": "",
+                "vendor_owner_representative_name": "",
+                "vendor_owner_email": "",
+                "order_channel": "",
+                "billing_conditions": "",
+                "payment_terms": "",
+                "currency": "",
+                "user_type": "",
+                "location": "",
+                "bank_name": "",
+                "account_number": "",
+                "account_holder": "",
+                "exp_date": "0001-01-01T00:00:00Z"
+            },
+            {
+                "_id": "619e3a03cae42e8ff93dd9bb",
+                "vendor_name": "SQ",
+                "registered_name": "qSq",
+                "country_origin": "",
+                "vat_number": "`112",
+                "businnes_models": "franchise",
+                "certification": "qsSsd",
+                "specialization_product": "vegetables",
+                "vendor_address": "",
+                "state": "",
+                "city": "",
+                "postal_code": "",
+                "manufacturing_address": "",
+                "vendor_email": "",
+                "phone_numbers": "",
+                "vendor_website": "",
+                "created_at": "0001-01-01T00:00:00Z",
+                "vendor_owner_name": "",
+                "vendor_owner_phone_numbers": "",
+                "vendor_owner_representative_name": "",
+                "vendor_owner_email": "",
+                "order_channel": "",
+                "billing_conditions": "",
+                "payment_terms": "",
+                "currency": "",
+                "user_type": "",
+                "location": "",
+                "bank_name": "",
+                "account_number": "",
+                "account_holder": "",
+                "exp_date": "0001-01-01T00:00:00Z"
             }
         ],
         "isError": false,
