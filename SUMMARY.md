@@ -36,6 +36,7 @@
   * [User Add Address](api/users/user-add-address.md)
   * [User Get All Address](api/users/user-get-all-address.md)
   * [get persona questions by number](api/users/get-persona-questions-by-number.md)
+  * [get persona questions](api/users/get-persona-questions.md)
   * [get persona answer](api/users/get-persona-answer.md)
   * [User Update Address](api/users/user-update-address.md)
 * [transactions](api/transactions/README.md)
