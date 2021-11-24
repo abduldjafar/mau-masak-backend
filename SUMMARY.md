@@ -25,6 +25,7 @@
 * [vendors](api/vendors/README.md)
   * [Update Vendors](api/vendors/update-vendors.md)
   * [Add Vendors](api/vendors/add-vendors.md)
+  * [get vendor by vendor id](api/vendors/get-vendor-by-vendor-id.md)
   * [Get All Vendors](api/vendors/get-all-vendors.md)
 * [users](api/users/README.md)
   * [Update User Password](api/users/update-user-password.md)
