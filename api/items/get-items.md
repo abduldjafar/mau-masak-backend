@@ -118,7 +118,7 @@ Whether the cake should be gluten-free or not.
                     "howto_handle": "",
                     "manufacturing_address": "",
                     "shipment_from_address": "",
-                    "amount": null,
+                    "items_sku": null,
                     "star": 0,
                     "created_at": "2021-10-29T10:38:55.771Z",
                     "type_of_packaging": "HDPE",
