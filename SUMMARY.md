@@ -35,7 +35,7 @@
   * [Update Users Profile](api/users/update-users.md)
   * [User Add Address](api/users/user-add-address.md)
   * [User Get All Address](api/users/user-get-all-address.md)
-  * [get persona questions](api/users/get-persona-questions.md)
+  * [get persona questions by number](api/users/get-persona-questions-by-number.md)
   * [get persona answer](api/users/get-persona-answer.md)
   * [User Update Address](api/users/user-update-address.md)
 * [transactions](api/transactions/README.md)
@@ -69,3 +69,4 @@
   * [get product by vendor\_id](api/admin/get-product-by-vendor\_id.md)
   * [add persona answer](api/admin/add-persona-answer.md)
   * [get persona questions](api/admin/get-persona-questions.md)
+  * [get persona questions by questions number](api/admin/get-persona-questions-by-questions-number.md)
