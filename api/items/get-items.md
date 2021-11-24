@@ -51,20 +51,21 @@ Whether the cake should be gluten-free or not.
             },
             "items": [
                 {
-                    "_id": "617e4c43117bd704d9e6051b",
+                    "_id": "619e3a8d4f6e52d8ad933be4",
                     "vendor_id": "",
                     "vendor_description": "",
-                    "brand_name": "Minimal organics",
-                    "house_room": "617bc57c6039d894317b2b71",
-                    "product_category": "617bc6e7b6028c6baeb8bace",
-                    "product_sub_category": "617bc8bdb6028c6baeb8bad3",
-                    "product_name": "Hair Soap Ayurvedic 80g",
-                    "price": 14,
-                    "stripe_price_id": "price_1JpsT6F8sq9RvyoVynrMgfui",
-                    "product_stripe_id": "prod_KUsDXx8sxd8FuZ",
+                    "brand_name": "",
+                    "house_room": "",
+                    "product_category": "",
+                    "product_sub_category": "",
+                    "product_name": "",
+                    "price": 0,
+                    "stripe_price_id": "",
+                    "product_stripe_id": "",
+                    "units": 0,
                     "mico_score": {
-                        "co2": 0.06,
-                        "water": 2.81,
+                        "co2": 0,
+                        "water": 0,
                         "non_recyle": false
                     },
                     "mico_values": {
@@ -77,8 +78,8 @@ Whether the cake should be gluten-free or not.
                             "value": ""
                         },
                         "organic": {
-                            "active": true,
-                            "value": "90%"
+                            "active": false,
+                            "value": ""
                         },
                         "glycerin_free": {
                             "active": false,
@@ -109,26 +110,44 @@ Whether the cake should be gluten-free or not.
                             "value": ""
                         }
                     },
-                    "product_overview": "Rich in saponins, vitamins and antioxidants that make your hair shiny improving hair’s texture. Nourishes follicles. How to use: Make sure to keep your shampoo dry before and after every use and place it on soap dish with drainage to remove any excess water. \n If you’re using your shampoo on the go, make sure to let it dry before packing. To prevent contamination and breakage, keep your shampoo in a small box or hard container for travelling. For all hair types.",
-                    "buying_details": {
-                        "country_origin": "Switzerland",
-                        "delivery_time": "3-5 business days",
-                        "delivery_packaging": "Sugarcane Bagasse"
-                    },
+                    "product_description": "",
+                    "ingredients_materials": "",
                     "howto_handle": "",
                     "manufacturing_address": "",
-                    "shipment_from_address": "",
-                    "items_sku": null,
+                    "shipping_from": "",
+                    "shipping_method": "",
+                    "shipping_courier": "",
+                    "shipping_cost": 0,
+                    "delivery_time": "",
+                    "items_sku": [
+                        {
+                            "_id": "6198535862fd76405447697c",
+                            "items_id": "619e3a8d4f6e52d8ad933be4",
+                            "colour": "Black",
+                            "size": "L",
+                            "stock": 10,
+                            "sold": 0,
+                            "price": 200,
+                            "stripe_price_id": "price_1Jxid6F8sq9RvyoV2nX8WSZK",
+                            "product_stripe_id": "prod_KcyaOwUvLPENZL",
+                            "active": false,
+                            "created_at": "2021-11-20T01:46:00.737Z"
+                        }
+                    ],
                     "star": 0,
-                    "created_at": "2021-10-29T10:38:55.771Z",
-                    "type_of_packaging": "HDPE",
-                    "weight": 9,
-                    "pictures": ["https://storage.googleapis.com/mico_project/item/617bcf408527296121bdc0b8/ayurvedic.webp"],
+                    "created_at": "2021-11-24T13:13:49.32Z",
+                    "type_of_packaging": "",
+                    "kg_of_packaging": 0,
+                    "minimum_order_quantity": 0,
+                    "weight": 0,
+                    "pictures": null,
                     "details_category": {
                         "house_room": "",
                         "category": "",
                         "sub_category": ""
-                    }
+                    },
+                    "published": false,
+                    "average_yearly_consumption": 0
                 }
             ]
         },
