@@ -1,6 +1,6 @@
 # add item sku
 
-{% swagger method="post" path="/v1/items/sku" baseUrl="" summary="" %}
+{% swagger method="post" path="/v1/items/sku/:items_id" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -47,10 +47,21 @@
 ```javascript
 [
     {
-        "colour": "Black",
-        "size": "L",
-        "stock": 10,
-        "price": 200
+        id        : "120938120938",
+        color        : "Blue",
+        size        : "L",
+        price        : 15.0,
+        vendorProductSKU: "SKU-981-B"
+    },
+    {
+        color        : "Red",
+        size        : "L",
+        price        : 15.0,
+        vendorProductSKU: "SKU-981-R",
+    },
+    {
+        color        : "Green",
+        vendorProductSKU: "SKU-981-G",
     }
 ]
 ```
@@ -71,10 +82,21 @@ curl --location --request POST 'http://localhost:8080/v1/items/sku/61976959e9d1a
 --header 'Content-Type: application/json' \
 --data-raw '[
     {
-        "colour": "Black",
-        "size": "L",
-        "stock": 10,
-        "price": 200
+        id        : "120938120938",
+        color        : "Blue",
+        size        : "L",
+        price        : 15.0,
+        vendorProductSKU: "SKU-981-B"
+    },
+    {
+        color        : "Red",
+        size        : "L",
+        price        : 15.0,
+        vendorProductSKU: "SKU-981-R",
+    },
+    {
+        color        : "Green",
+        vendorProductSKU: "SKU-981-G",
     }
 ]'
 ```
