@@ -49,7 +49,12 @@
                 "bank_name": "",
                 "account_number": "",
                 "account_holder": "",
-                "bank_account_exp_date": "0001-01-01T00:00:00Z"
+                "bank_account_exp_date": "0001-01-01T00:00:00Z",
+                "shipping_method": "",
+                "shipping_partner": "",
+                "shipping_cost_b2b": 0,
+                "shipping_cost_b2c": 0,
+                "published": false
         },
         "isError": false,
         "message": "success"
