@@ -34,10 +34,9 @@ Authentication token to track down who is emptying our stocks.
 {% tabs %}
 {% tab title="Json Body" %}
 ```javascript
+// please items_id fill with sku_id
 {
-  "items_id":"615d7aee24605684a912f493",
-	"items_colour":"red",
-	"items_size":"xl",
+  	"items_id":"615d7aee24605684a912f493",
 	"count":1
 }
 ```
