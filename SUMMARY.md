@@ -2,7 +2,7 @@
 
 * [Initial page](README.md)
 
-## Mico Api <a href="api" id="api"></a>
+## Mico Api <a href="#api" id="api"></a>
 
 * [cart](api/cart/README.md)
   * [Select Cart](api/cart/select-cart.md)
@@ -13,6 +13,9 @@
 * [Items](api/items/README.md)
   * [Get Items](api/items/get-items.md)
   * [get items by items id](api/items/get-items-by-items-id.md)
+  * [get bad items by sub\_category](api/items/get-bad-items-by-sub\_category.md)
+  * [create bad item](api/items/create-bad-item.md)
+  * [update bad items](api/items/update-bad-items.md)
   * [Get list Mico Score](api/items/get-list-mico-score.md)
   * [Search Items](api/items/search-items.md)
   * [Update Items](api/items/update-items.md)
