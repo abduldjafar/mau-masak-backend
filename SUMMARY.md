@@ -78,4 +78,5 @@
   * [add persona answer](api/admin/add-persona-answer.md)
   * [get persona questions](api/admin/get-persona-questions.md)
   * [get list customer](api/admin/get-list-customer.md)
+  * [get customer by ID](api/admin/get-customer-by-id.md)
   * [get persona questions by questions number](api/admin/get-persona-questions-by-questions-number.md)
