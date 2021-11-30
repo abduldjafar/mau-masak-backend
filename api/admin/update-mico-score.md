@@ -4,6 +4,14 @@
 {% swagger-description %}
 
 {% endswagger-description %}
+
+{% swagger-parameter in="path" name="id" required="true" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="Authorization" required="true" %}
+
+{% endswagger-parameter %}
 {% endswagger %}
 
 ### Json Body
