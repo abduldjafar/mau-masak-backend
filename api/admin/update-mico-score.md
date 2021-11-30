@@ -12,6 +12,19 @@
 {% swagger-parameter in="header" name="Authorization" required="true" %}
 
 {% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "responses": {
+        "code": 200,
+        "data": null,
+        "isError": false,
+        "message": "success"
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 ### Json Body
