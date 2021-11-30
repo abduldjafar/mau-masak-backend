@@ -77,4 +77,5 @@
   * [get product by vendor\_id](api/admin/get-product-by-vendor\_id.md)
   * [add persona answer](api/admin/add-persona-answer.md)
   * [get persona questions](api/admin/get-persona-questions.md)
+  * [get list customer](api/admin/get-list-customer.md)
   * [get persona questions by questions number](api/admin/get-persona-questions-by-questions-number.md)
