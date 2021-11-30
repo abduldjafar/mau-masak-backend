@@ -67,6 +67,7 @@
   * [login](api/admin/login.md)
   * [add mico score](api/admin/add-mico-score.md)
   * [update mico score](api/admin/update-mico-score.md)
+  * [delete mico score](api/admin/delete-mico-score.md)
   * [update password](api/admin/update-password.md)
   * [update profile](api/admin/update-profile.md)
   * [dashboard overview](api/admin/dashboard-overview.md)
