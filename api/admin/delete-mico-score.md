@@ -21,4 +21,17 @@
 }
 ```
 {% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="" %}
+```javascript
+{
+    "responses": {
+        "code": 400,
+        "data": null,
+        "isError": true,
+        "message": "from server"
+    }
+}
+```
+{% endswagger-response %}
 {% endswagger %}
