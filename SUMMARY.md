@@ -32,6 +32,7 @@
   * [get vendor by vendor id](api/vendors/get-vendor-by-vendor-id.md)
   * [Get All Vendors](api/vendors/get-all-vendors.md)
 * [users](api/users/README.md)
+  * [Forgot Password](api/users/forgot-password.md)
   * [Update User Password](api/users/update-user-password.md)
   * [Update User Email](api/users/update-user-email.md)
   * [Save Users](api/users/save-users.md)
