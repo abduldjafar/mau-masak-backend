@@ -67,6 +67,7 @@
   * [create sub sub tags](api/content/create-sub-sub-tags.md)
 * [admin](api/admin/README.md)
   * [login](api/admin/login.md)
+  * [Get All Persona](api/admin/get-all-persona.md)
   * [add mico score](api/admin/add-mico-score.md)
   * [update mico score](api/admin/update-mico-score.md)
   * [delete mico score](api/admin/delete-mico-score.md)
