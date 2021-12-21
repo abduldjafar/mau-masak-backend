@@ -33,6 +33,7 @@
   * [Get All Vendors](api/vendors/get-all-vendors.md)
 * [users](api/users/README.md)
   * [Forgot Password](api/users/forgot-password.md)
+  * [persona answer](api/users/persona-answer.md)
   * [Password Recovery](api/users/password-recovery.md)
   * [Update User Password](api/users/update-user-password.md)
   * [Update User Email](api/users/update-user-email.md)
