@@ -68,6 +68,7 @@
 * [admin](api/admin/README.md)
   * [login](api/admin/login.md)
   * [Get All Persona](api/admin/get-all-persona.md)
+  * [Update Persona](api/admin/update-persona.md)
   * [add mico score](api/admin/add-mico-score.md)
   * [update mico score](api/admin/update-mico-score.md)
   * [delete mico score](api/admin/delete-mico-score.md)
