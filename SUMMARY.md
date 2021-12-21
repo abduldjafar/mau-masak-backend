@@ -67,6 +67,7 @@
   * [create sub sub tags](api/content/create-sub-sub-tags.md)
 * [admin](api/admin/README.md)
   * [login](api/admin/login.md)
+  * [Delete Item For Persona](api/admin/delete-item-for-persona.md)
   * [Get All Persona](api/admin/get-all-persona.md)
   * [Get All Item For Persona](api/admin/get-all-item-for-persona.md)
   * [Add Item To Persona Bucket](api/admin/add-item-to-persona-bucket.md)
