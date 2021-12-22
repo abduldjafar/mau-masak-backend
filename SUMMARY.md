@@ -25,6 +25,7 @@
   * [Delete Items](api/items/delete-items.md)
   * [Get Category](api/items/untitled.md)
   * [Get Sub Category](api/items/get-sub-category.md)
+  * [Delete Sub Category](api/items/delete-sub-category.md)
   * [Delete House Part](api/items/delete-house-part.md)
   * [Get House Part](api/items/get-house-part.md)
 * [vendors](api/vendors/README.md)
