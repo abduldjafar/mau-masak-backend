@@ -57,6 +57,7 @@
   * [Checkout](api/transactions/checkout.md)
 * [content](api/content/README.md)
   * [list country](api/content/list-country.md)
+  * [Delete Content Tags, Sub Tags, Sub Sub Tags](api/content/delete-content-tags-sub-tags-sub-sub-tags.md)
   * [create](api/content/create.md)
   * [upload thumbnail](api/content/upload-thumbnail.md)
   * [get contents](api/content/get-contents.md)
