@@ -1,6 +1,6 @@
 # Delete Item For Persona
 
-{% swagger method="get" path="/v1/admin/persona/bucket/:persona_bucket_id" baseUrl="" summary="" %}
+{% swagger method="delete" path="/v1/admin/persona/bucket/:persona_bucket_id" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
