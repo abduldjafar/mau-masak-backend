@@ -72,6 +72,7 @@
   * [create sub sub tags](api/content/create-sub-sub-tags.md)
 * [admin](api/admin/README.md)
   * [login](api/admin/login.md)
+  * [download report by vendor](api/admin/download-report-by-vendor.md)
   * [Delete Item For Persona](api/admin/delete-item-for-persona.md)
   * [Get All Persona](api/admin/get-all-persona.md)
   * [Get All Item For Persona](api/admin/get-all-item-for-persona.md)
