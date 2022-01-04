@@ -36,7 +36,8 @@ Whether the cake should be gluten-free or not.
                     "co2": 10,
                     "water": 10,
                     "non_recyle": true
-                }
+                },
+                "product_sub_category":"xxxxxxx"
             }
         ],
         "isError": false,
