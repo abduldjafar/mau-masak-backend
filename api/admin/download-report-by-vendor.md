@@ -1,12 +1,12 @@
 # download report by vendor
 
-{% swagger method="get" path="/v1/admin/order_reports/vendor/:filename" baseUrl="" summary="" %}
+{% swagger method="get" path="/v1/admin/order_reports/vendor/:filename.zip" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="filename" type="string" required="true" %}
-
+should be .zip file
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" required="true" %}
