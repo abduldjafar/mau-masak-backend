@@ -20,4 +20,8 @@ example : 2022-01-01T23:59:59Z
 {% swagger-parameter in="query" name="start_date" required="true" %}
 example : 2021-12-01T00:00:00Z
 {% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="vendor_id" required="true" %}
+
+{% endswagger-parameter %}
 {% endswagger %}
