@@ -28,6 +28,7 @@
   * [Delete Sub Category](api/items/delete-sub-category.md)
   * [Delete Category](api/items/delete-category.md)
   * [Delete House Part](api/items/delete-house-part.md)
+  * [get house part full children](api/items/get-house-part-full-children.md)
   * [Get House Part](api/items/get-house-part.md)
 * [vendors](api/vendors/README.md)
   * [Update Vendors](api/vendors/update-vendors.md)
