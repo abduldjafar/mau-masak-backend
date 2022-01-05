@@ -163,6 +163,9 @@
     "country": "",
     "sub_sub_tags": [
         ""
+    ],
+    "tags": [
+        ""
     ]
 }
 ```
