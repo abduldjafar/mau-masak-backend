@@ -62,6 +62,7 @@
   * [create](api/content/create.md)
   * [upload thumbnail](api/content/upload-thumbnail.md)
   * [get contents](api/content/get-contents.md)
+  * [get content by tags](api/content/get-content-by-tags.md)
   * [Get Spesific Content](api/content/get-spesific-content.md)
   * [update](api/content/update.md)
   * [delete](api/content/delete.md)
