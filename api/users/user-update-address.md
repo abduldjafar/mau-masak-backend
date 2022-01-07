@@ -1,6 +1,6 @@
 # User Update Address
 
-{% swagger baseUrl="https://api.cakes.com" path="/v1/cakes/:id" method="put" summary="Update Address" %}
+{% swagger baseUrl="https://api.cakes.com" path="/v1/users/address" method="put" summary="Update Address" %}
 {% swagger-description %}
 This endpoint allows you to get free cakes.
 {% endswagger-description %}
@@ -40,26 +40,27 @@ Authentication token to track down who is emptying our stocks.
     "address_line2": "asoi",
     "city": "asoi",
     "state": "asoi",
-    "postal_code": "asoi"
+    "postal_code": "asoi",
+    "is_default":true
 }
 ```
 {% endtab %}
 
 {% tab title="Description" %}
-| field         | type   | description |
-| ------------- | ------ | ----------- |
-| \_id          | string | address id  |
-| user_id       | string |             |
-| recipent_name | string |             |
-| country       | string |             |
-| phone_number  | string |             |
-| address_line1 | string |             |
-| address_line2 | string |             |
-| city          | string |             |
-| state         | string |             |
-| postal_code   | string |             |
+| field          | type   | description |
+| -------------- | ------ | ----------- |
+| \_id           | string | address id  |
+| user\_id       | string |             |
+| recipent\_name | string |             |
+| country        | string |             |
+| phone\_number  | string |             |
+| address\_line1 | string |             |
+| address\_line2 | string |             |
+| city           | string |             |
+| state          | string |             |
+| postal\_code   | string |             |
 
- 
+&#x20;
 {% endtab %}
 {% endtabs %}
 
@@ -80,7 +81,8 @@ curl --location --request PUT 'http://localhost:8080/v1/users/address' \
     "address_line2": "asoi",
     "city": "asoi",
     "state": "asoi",
-    "postal_code": "asoi"
+    "postal_code": "asoi",
+    "is_default":true
 }'
 ```
 {% endtab %}
