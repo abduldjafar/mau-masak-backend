@@ -161,7 +161,7 @@
     },
     "title": "",
     "country": "",
-    "sub_sub_tags": [
+    "sub_tags": [
         ""
     ],
     "tags": [
